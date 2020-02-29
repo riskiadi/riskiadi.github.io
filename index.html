@@ -62,12 +62,10 @@
     }
 
     .content-1 {
+      margin-bottom: 10px;
       text-align: center;
       font-size: 40px;
-    }
-
-    .black-font {
-      color: #333;
+      color: #45474A;
     }
 
     .progress {
@@ -97,12 +95,48 @@
       color: #0097a7;
     }
 
-    .modal-content img{
+    .modal-content img {
       border: 1px solid #ccc;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 100%;
       margin-top: 15px;
       margin-bottom: 15px;
+    }
+
+    hr {
+      border: 2px solid #00796b;
+      padding: 0;
+      margin: 0;
+    }
+
+    .w3-border {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .w3-grey {
+      color: #000 !important;
+      background-color: #00796b !important
+    }
+
+    .text-progress {
+      font-size: 15px;
+      padding-left: 10px;
+      font-weight: bold;
+      color: white;
+      vertical-align: middle;
+    }
+
+    .about-text {
+      vertical-align: middle;
+      margin-top: 70px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .about-text {
+        vertical-align: middle;
+        margin-top: 0px !important;
+        margin-bottom: 20px;
+      }
     }
   </style>
   <title>PORTFOLIO-RIZKI ADI SAPUTRA</title>
@@ -115,230 +149,125 @@
     <div class="container">
       <div class="row">
         <div class="col s12 white-text">
-          <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/profile.jpg" alt="" class="circle responsive-img profile-photo">
+          <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/profile.jpg" alt=""
+            class="circle responsive-img profile-photo">
           <h1 class="title-header">RIZKI ADI SAPUTRA</h1>
-          <h2 class="title-subheader">Welcome To My Portofolio, I'am an Android and Web Developer</h2>
-          <h2 class="title-subheader-2"><i class="material-icons" style="font-size:15px;margin-right:5px;">email</i>rizkiadisaputra77@gmail.com</h2>
+          <h2 class="title-subheader">Welcome To My Portofolio, I am an
+            Android
+            and Web Developer</h2>
+          <h2 class="title-subheader-2"><i class="material-icons"
+              style="font-size:15px;margin-right:5px;">email</i>rizkiadisaputra77@gmail.com</h2>
         </div>
       </div>
     </div>
 
     <div class="parallax">
-      <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/header.jpg">
+      <!-- <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/header.jpg"> -->
+      <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/body2.jpg"
+        style="filter: brightness(55%);">
     </div>
 
   </div>
-
+  <hr class="">
   <div class="container">
     <div class="row" style="padding-bottom:25px;">
-      <div class="col s12">
-        <h2 class="content-1 black-font">SKILLS</h2>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#333333">
-                  <path
-                    d="M96.35807,7.16667c7.88333,15.7165 -28.23095,25.4065 -31.59212,38.49284c-3.0745,12.02567 21.43651,26.00716 21.45801,26.00716c-3.72667,-4.97367 -6.42111,-9.0917 -10.16211,-16.83887c-6.321,-13.10067 37.34572,-26.61263 20.29622,-47.66113zM121.83333,28.66667c0,0 -27.23434,1.6546 -28.62468,18.2526c-0.61633,7.38883 7.15446,11.33072 7.37663,16.71289c0.18633,4.386 -4.64713,8.03451 -4.64713,8.03451c0,0 7.98434,-1.22169 10.722,-7.92253c3.03151,-7.43183 -5.10938,-12.857 -4.19922,-18.8125c0.86717,-5.69033 19.3724,-16.26497 19.3724,-16.26497zM72.84244,71.68066c0,0 -29.84244,-0.43235 -29.84244,8.16048c0,4.09848 8.3149,6.37668 19.80632,7.20866c-4.65945,0.20386 -11.21191,3.86515 -11.21191,7.44662c0,7.41033 35.13962,13.11724 61.15462,2.29557l-9.00033,-5.86491c-17.55856,5.9575 -49.82962,4.07325 -40.62044,-3.84928c13.67211,0.94968 31.8154,-0.15785 46.87728,-3.13542c0,0 6.34329,-3.58715 8.32845,-5.51498c-18.2965,3.784 -58.94304,2.68761 -58.94304,-0.60189c0,-3.0315 13.45149,-6.14486 13.45149,-6.14486zM133.25521,71.68066c-3.28064,-0.14227 -6.87283,0.94634 -9.96615,3.2334c6.45717,-1.44767 11.91178,2.66029 11.91178,7.40462c0,10.664 -14.79525,20.77214 -14.79525,20.77214c0,0 22.92774,-2.7314 22.92774,-20.26823c0,-7.24281 -4.6104,-10.90481 -10.07812,-11.14193zM69.83301,102.78288c-6.42133,0 -10.58203,4.45856 -10.58203,7.72656c0,10.11217 38.31871,10.46613 53.51204,0.18196l-9.6582,-6.22884c-11.34483,5.38217 -39.82931,6.11765 -33.27181,-1.67969zM42.13216,119.63574c-9.23527,-0.29698 -13.46549,4.5458 -13.46549,8.49642c0,21.01267 100.33333,19.99444 100.33333,-1.46973c0,-3.569 -3.88635,-5.26503 -5.29101,-6.07487c8.1915,20.52533 -83.06055,19.11753 -83.06055,6.99869c0,-2.75917 4.82496,-5.56603 10.97396,-4.2832c0,0 -2.24686,-2.67507 -5.22103,-3.20541c-1.5256,-0.26964 -2.94988,-0.41949 -4.26921,-0.46191zM143.33333,134.06706c-15.77383,15.9745 -59.19084,25.67122 -99.38151,15.81706c40.377,16.9205 99.18801,3.78378 99.38151,-15.81706z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">Java</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 85%"></div>
-          </div>
+      <div class="col s12 center-align">
+        <h2 class="content-1">ABOUT</h2>
+        <div
+          style="display: inline-block;width: 100px;height: 5px; background-color: #45474A;position: relative;margin-bottom: 15px;">
         </div>
       </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#333333">
-                  <path
-                    d="M42.16016,48.375c-20.45019,0 -36.78516,16.81787 -36.78516,37.625c0,20.80713 16.33496,37.625 36.78516,37.625c14.84424,0 26.77002,-9.23828 35.10547,-17.80469c3.61133,-3.71631 6.48779,-7.24365 8.73438,-10.24609c2.24658,3.00244 5.12305,6.52979 8.73438,10.24609c8.33545,8.56641 20.26123,17.80469 35.10547,17.80469c20.4502,0 36.78516,-16.81787 36.78516,-37.625c0,-20.80713 -16.33496,-37.625 -36.78516,-37.625c-14.84424,0 -26.77002,9.23828 -35.10547,17.80469c-3.61133,3.71631 -6.48779,7.24365 -8.73437,10.24609c-2.1626,-3.00244 -4.8501,-6.55078 -8.39844,-10.24609c-8.27246,-8.5874 -20.34521,-17.80469 -35.44141,-17.80469zM42.16016,59.125c10.60303,0 20.47119,6.90771 27.71484,14.44531c5.96289,6.19385 8.18848,10.43506 9.40625,12.42969c-1.23877,1.99463 -3.69531,6.21484 -9.74219,12.42969c-7.34863,7.55859 -17.13281,14.44531 -27.37891,14.44531c-14.65527,0 -26.03516,-11.54785 -26.03516,-26.875c0,-15.32715 11.37989,-26.875 26.03516,-26.875zM129.83984,59.125c14.65528,0 26.03516,11.54785 26.03516,26.875c0,15.32715 -11.37988,26.875 -26.03516,26.875c-10.24609,0 -20.03027,-6.88672 -27.37891,-14.44531c-6.04687,-6.21484 -8.50342,-10.43506 -9.74219,-12.42969c1.23877,-1.99463 3.69531,-6.21484 9.74219,-12.42969c7.34864,-7.55859 17.13281,-14.44531 27.37891,-14.44531zM123.625,69.875v10.75h-10.75v10.75h10.75v10.75h10.75v-10.75h10.75v-10.75h-10.75v-10.75zM26.875,80.625v10.75h32.25v-10.75z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">IoT</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 75%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#333333">
-                  <path
-                    d="M21.5,28.66667c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v78.83333c0,7.90483 6.4285,14.33333 14.33333,14.33333h129c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-78.83333c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM50.16667,64.5h10.75c5.934,0 10.75,4.816 10.75,10.75c0,5.934 -4.816,10.75 -10.75,10.75h-3.58333v14.33333h-7.16667zM78.83333,64.5h7.16667v14.33333h7.16667v-14.33333h7.16667v14.33333v7.16667v14.33333h-7.16667v-14.33333h-7.16667v14.33333h-7.16667v-14.33333v-7.16667zM107.5,64.5h10.75c5.934,0 10.75,4.816 10.75,10.75c0,5.934 -4.816,10.75 -10.75,10.75h-3.58333v14.33333h-7.16667zM57.33333,71.66667v7.16667h3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333zM114.66667,71.66667v7.16667h3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333c0,-1.978 -1.60533,-3.58333 -3.58333,-3.58333z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">PHP</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 80%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#333333">
-                  <path
-                    d="M150.5,14.33333h-129l14.33333,129l50.16667,14.33333l50.16667,-14.33333zM120.57357,57.92122h-54.86979l1.31576,15.6211h52.23828l-3.91927,46.13542l-29.33854,9.35026l-0.27994,-0.11198l-29.0026,-9.23828l-1.59571,-18.8125h14.22135l0.61589,7.30664l16.20899,3.58333l15.90104,-3.58333l1.70768,-19.73633h-49.71875l-3.83528,-45.43555h71.63867z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">HTML</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 85%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#333333">
-                  <path
-                    d="M21.5,14.33333l14.33333,129l50.11068,14.33333l50.22265,-14.33333l14.33333,-129zM119.8737,74.1582l-2.74349,44.73568l-30.93424,10.10612l-30.93424,-10.10612l-1.17578,-21.38802h15.67708l0.39193,9.71419l16.04101,5.45898l16.06901,-5.45898l1.17578,-17.49675h-34.46159l-0.78385,-15.5651h36.00131l1.17578,-15.5651h-54.02994l-1.17578,-15.5371h71.66667z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">CSS</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 85%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#333333">
-                  <path
-                    d="M150.5,35.83333h-129c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v78.83333c0,7.90483 6.4285,14.33333 14.33333,14.33333h129c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-78.83333c0,-7.90483 -6.4285,-14.33333 -14.33333,-14.33333zM78.83333,96.75c0,5.934 -4.816,10.75 -10.75,10.75c-5.934,0 -10.75,-4.816 -10.75,-10.75h7.16667c0,1.978 1.60533,3.58333 3.58333,3.58333c1.978,0 3.58333,-1.60533 3.58333,-3.58333v-25.08333h7.16667zM97.86083,86.473c1.60533,0.58767 9.546,4.128 9.6105,11.352c0.01433,1.53367 -0.37983,9.5675 -10.64967,9.675c-11.17283,0.12183 -11.9325,-9.48867 -11.9325,-11.47383h6.9875c0,1.0535 0.09317,6.14183 4.945,5.74767c2.91683,-0.24367 3.5475,-2.3435 3.64783,-3.90583c0.16483,-2.63017 -2.3435,-4.20683 -4.99517,-5.4825c-3.72667,-1.79167 -9.62483,-3.99183 -9.73233,-10.97217c-0.09317,-6.28517 4.52933,-9.92583 10.93633,-9.74667c10.19817,0.29383 10.82167,9.19483 10.82167,10.77867h-6.93733c0,-0.73817 0.12183,-5.00233 -4.00617,-5.00233c-1.25417,0 -4.07067,0.559 -3.85567,4.0205c0.20783,3.17483 4.39317,4.67267 5.16,5.0095z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">JavaScript</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 70%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1"></path>
-                <g fill="#333333" stroke="none" stroke-width="1">
-                  <path
-                    d="M136.16667,21.5h-100.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v100.33333c0,7.91917 6.41417,14.33333 14.33333,14.33333h100.33333c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-100.33333c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333z">
-                  </path>
-                </g>
-                <g fill="#ffffff" stroke="none" stroke-width="1">
-                  <path
-                    d="M72.655,91.655v-30.3h5.66v30.21c0,4.08 -1.22667,7.27333 -3.68,9.58c-2.45333,2.30667 -5.72,3.46 -9.8,3.46v0c-4.24,0 -7.54,-1.08667 -9.9,-3.26c-2.36667,-2.16667 -3.55,-5.20333 -3.55,-9.11v0h5.63c0,2.44 0.66667,4.34667 2,5.72c1.34,1.36667 3.28,2.05 5.82,2.05v0c2.32667,0 4.20667,-0.73333 5.64,-2.2c1.43333,-1.46667 2.16,-3.51667 2.18,-6.15zM120.465,81.335v2.73c0,4.12 -0.65333,7.67 -1.96,10.65c-1.30667,2.98 -3.14333,5.31 -5.51,6.99v0l7.62,5.97l-3.84,3.55l-8.99,-7.15c-1.40667,0.35333 -2.89,0.53 -4.45,0.53v0c-3.36,0 -6.34,-0.82667 -8.94,-2.48c-2.6,-1.65333 -4.61667,-4.00667 -6.05,-7.06c-1.43333,-3.06 -2.17,-6.6 -2.21,-10.62v0v-3.08c0,-4.1 0.71333,-7.72333 2.14,-10.87c1.42667,-3.14 3.44333,-5.54667 6.05,-7.22c2.60667,-1.66667 5.59,-2.5 8.95,-2.5v0c3.43333,0 6.45333,0.83 9.06,2.49c2.61333,1.66 4.62333,4.04667 6.03,7.16c1.4,3.11333 2.1,6.75 2.1,10.91zM114.845,84.475v-3.17c0,-5.01333 -1,-8.88333 -3,-11.61c-2.00667,-2.72667 -4.86333,-4.09 -8.57,-4.09v0c-3.54,0 -6.33,1.35333 -8.37,4.06c-2.04,2.70667 -3.09,6.46 -3.15,11.26v0v3.14c0,4.88 1.02333,8.72667 3.07,11.54c2.04,2.81333 4.87667,4.22 8.51,4.22c3.63333,0 6.44333,-1.32333 8.43,-3.97c1.99333,-2.64667 3.02,-6.44 3.08,-11.38z">
-                  </path>
-                </g>
-                <path d="M41.385,121.225v-70.45h89.23v70.45z" fill="#ff0000" stroke="#50e3c2" stroke-width="3" opacity="0"></path>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">Jquery</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 70%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col m3 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" viewBox="0 0 172 172" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                text-anchor="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g id="original-icon" fill="#333333">
-                  <path
-                    d="M57.33333,14.33333l-43,43l26.97298,26.97298l10.13411,-10.14811l-16.83887,-16.82487l22.73177,-22.73177l16.83886,16.83887l10.13412,-10.13411zM131.96744,14.33333c-1.83376,0 -3.66956,0.69853 -5.06706,2.09961l-12.23372,12.23372l28.66667,28.66667l12.23372,-12.23372c2.80217,-2.80217 2.80217,-7.33911 0,-10.13412l-18.53255,-18.53255c-1.40108,-1.40108 -3.23329,-2.09961 -5.06706,-2.09961zM103.91667,39.41667l-82.41667,82.41667v28.66667h28.66667l82.41667,-82.41667zM130.69368,87.69368l-10.13411,10.13412l16.83886,16.83886l-22.73177,22.73177l-16.82487,-16.83886l-10.14811,10.13411l26.97298,26.97298l43,-43z">
-                  </path>
-                </g>
-              </g>
-            </svg>
-          </h2>
-          <h5 class="center">UI/UX</h5>
-          <div class="progress">
-            <div class="determinate" style="width: 85%"></div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
+    <div class="row" style="padding-bottom:25px;padding-left: 50px;padding-right: 50px;">
+      <div class="col m5 s12 center-align about-text">
 
-  <div class="parallax-container center valign-wrapper">
-    <div class="parallax"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/body1.jpg">
-    </div>
+        <blockquote style="border-color: #00796B;">
+          <p class="text-bold">I am an Android and Web Developer from Indonesia.
+            I have developed several desktop, web,
+            android, and IoT
+            projects. So Android, Web, and IoT development is my serious passion.</p>
+        </blockquote>
 
-    <div class="container white-text">
-      <div class="row">
-        <div class="col s12">
-          <h5>I have several desktop, web, and android projects that I have completed</h5>
+      </div>
+
+      <div class="col m7 s12">
+
+        <div class="col s12" style="margin: 7px 0px 7px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:85%">
+              <span class="text-progress">JAVA</span>
+            </div>
+          </div>
         </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:75%">
+              <span class="text-progress">Kotlin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:70%">
+              <span class="text-progress">IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:80%">
+              <span class="text-progress">PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:85%">
+              <span class="text-progress">HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:85%">
+              <span class="text-progress">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:75%">
+              <span class="text-progress">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12" style="margin: 8px 0 8px 0;">
+          <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:85%">
+              <span class="text-progress">UI/UX</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <div class="container center-align">
-    <div class="section">
+  <div class="center-align" style="background-color:#F5F5F5;">
+    <div class=" section">
 
       <div class="row">
         <div class="col s12">
           <h4>PROJECTS</h4>
+          <div style="display: inline-block;width: 100px;height: 5px; background-color: #45474A;position: relative;">
+          </div>
         </div>
       </div>
 
@@ -350,17 +279,17 @@
         </div>
         <div class="col m3 s12">
           <a class="modal-trigger" href="#modal2">
-            <h1 class="portfolio-header">System Administrator Jersey Selling and Tracking System</h1>
+            <h1 class="portfolio-header">System Administrator Jersey Selling and Tracking System (ProjectOne)</h1>
           </a>
         </div>
         <div class="col m3 s12">
           <a class="modal-trigger" href="#modal3">
-            <h1 class="portfolio-header">Mobile Roulette Prize Application</h1>
+            <h1 class="portfolio-header">Mobile Roulette Prize Application (PT. Djarum (Kudus))</h1>
           </a>
         </div>
         <div class="col m3 s12">
           <a class="modal-trigger" href="#modal4">
-            <h1 class="portfolio-header">Mobile Expense Report Application</h1>
+            <h1 class="portfolio-header">Mobile Expense Report Application (PT. Eka Surya Alam)</h1>
           </a>
         </div>
       </div>
@@ -368,7 +297,7 @@
       <div class="row">
         <div class="col m3 s12 offset-m3">
           <a class="modal-trigger" href="#modal5">
-            <h1 class="portfolio-header">Desktop Software Protector From User Duplication</h1>
+            <h1 class="portfolio-header">Desktop Software Protector From User Duplication (ZXC)</h1>
           </a>
         </div>
         <div class="col m3 s12">
@@ -378,24 +307,22 @@
         </div>
       </div>
 
-    </div>
-  </div>
-
-  <div class="parallax-container center valign-wrapper">
-    <div class="parallax"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/body2.jpg">
-    </div>
-
-    <div class="container white-text">
       <div class="row">
         <div class="col s12">
-          <h5>I am interested in programming, and desire
-            to learn new things about programming, i
-            recently began to be fascinated by mobile
-            (Android) and web programming. I also love
-            things about UI and UX, moreover I'm
-            enthusiastic about material design.</h5>
+          <h4>CERTIFICATE</h4>
+          <div style="display: inline-block;width: 100px;height: 5px; background-color: #45474A;position: relative;">
+          </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col m12 s12">
+          <a class="modal-trigger" href="pdf/cert.pdf">
+            <h1 class="portfolio-header">SERTIFIKAT KOMPETENSI</h1>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -411,9 +338,12 @@
         <div class="col m3 s6">
           <div class="contact">
             <a href="https://www.instagram.com/rizkiadisp/">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#333333">
                     <path
@@ -430,9 +360,12 @@
         <div class="col m3 s6">
           <div class="contact">
             <a href="https://www.facebook.com/rizkiadisaputra77">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#333333">
                     <path
@@ -449,9 +382,12 @@
         <div class="col m3 s6">
           <div class="contact">
             <a href="https://github.com/riskiadi">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#333333">
                     <path
@@ -468,9 +404,12 @@
         <div class="col m3 s6">
           <div class="contact">
             <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#333333">
                     <path
@@ -490,60 +429,101 @@
 
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-1.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-2.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-3.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-4.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-5.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-6.png" style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot.jpg"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-1.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-2.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-3.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-4.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-5.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-6.png"
+        style="width:50%;margin:10px auto 10px auto;">
     </div>
   </div>
 
   <div id="modal2" class="modal">
     <div class="modal-content">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-1.png">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-2.png">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-3.png">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-1.png">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-2.png">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-3.png">
     </div>
   </div>
 
   <div id="modal3" class="modal">
     <div class="modal-content">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-1.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-2.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-3.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-4.png" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-5.png" style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-1.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-2.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-3.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-4.png"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-5.png"
+        style="width:50%;margin:10px auto 10px auto;">
     </div>
   </div>
 
   <div id="modal4" class="modal">
     <div class="modal-content">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-1.jpg" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-2.jpg" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-3.jpg" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-4.jpg" style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-1.jpg"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-2.jpg"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-3.jpg"
+        style="width:50%;margin:10px auto 10px auto;">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-4.jpg"
+        style="width:50%;margin:10px auto 10px auto;">
     </div>
   </div>
 
   <div id="modal5" class="modal">
     <div class="modal-content">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-5-1.jpg">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-5-1.jpg">
     </div>
   </div>
 
   <div id="modal6" class="modal">
     <div class="modal-content">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-1.png">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-2.png">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-3.png">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-1.png">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-2.png">
+      <img class="materialboxed"
+        src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-3.png">
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.parallax').parallax();
       $('.materialboxed').materialbox();
       $('.modal').modal();
