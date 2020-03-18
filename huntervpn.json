@@ -1,5 +1,8 @@
 {
-  "nama": "rizki adi saputra",
+  "nama": {
+    "profil_1": "rizki adi",
+    "profil_2": "lulu"
+  },
   "umur": "22",
   "negara": "indonesia"
 }
