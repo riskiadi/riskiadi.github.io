@@ -1,5 +1,4 @@
 {
-  "nama": "rizki adi saputra",
-  "umur": "22",
-  "negara": "indonesia"
-} 
+  "app_run": true,
+  "message": "This is message"
+}
