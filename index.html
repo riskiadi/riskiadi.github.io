@@ -54,14 +54,19 @@
       font-size: 25px;
     }
 
-    .title-subheader {
+    .title-subheader{
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .title-subheader h2{
       margin: 10px 0 0 0;
       font-size: 15px;
       line-height: 20px;
     }
 
     .title-subheader-2 {
-      margin: 10px 0 0 0;
+      margin: 0;
       line-height: -10px;
       display: inline-block;
       font-size: 15px;
@@ -104,8 +109,19 @@
       background-color: rgba(255, 255, 255, 0.4)
     }
 
-    .contact a {
-      color: #333;
+    .col .contact a {
+      color: #333333;
+      display: inline-block;
+    }
+
+    .col .contact a:hover {
+      transition: all 0.2s;
+      padding-bottom: 5px;
+      border-bottom: 5px solid #333333;
+    }
+
+    .contact p{
+      margin: 0;
     }
 
     .portfolio-header {
@@ -150,12 +166,20 @@
       vertical-align: middle;
     }
 
-    .row .col.progresses {
-      padding: 0 200px 0 200px;
-    }
-
     .section-title {
       font-size: 38px;
+    }
+
+    .about-section{
+      margin-top: 30px;
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-align:center;
+      -webkit-align-items:center;
+      -ms-flex-align:center;
+      align-items:center;
     }
 
     @media only screen and (max-width: 600px) {
@@ -165,10 +189,6 @@
         margin-bottom: 20px;
       }
 
-      .row .col.progresses {
-        padding: 0;
-      }
-
       .section-title {
         font-size: 30px;
       }
@@ -176,6 +196,15 @@
       .parallax img {
         max-height: 110%;
       }
+
+      .about-section{
+        display:block;
+      }
+
+      .col .contact a {
+        margin: 30px;
+      }
+
     }
   </style>
   <title>Rizki Adi Saputra</title>
@@ -187,12 +216,13 @@
   <div class="parallax-container center valign-wrapper">
     <div class="container">
       <div class="row">
-        <div class="col s12 white-text">
-          <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/profile.jpg" alt="" class="circle responsive-img profile-photo">
+        <div class="col s12 white-text" style="padding-top:30px;">
+          <img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/profile.jpg" alt="photo" class="circle responsive-img profile-photo">
           <h1 class="title-header">RIZKI ADI SAPUTRA</h1>
-          <h2 class="title-subheader">Welcome To My Portofolio, I am an
-            Android
-            and Web Developer</h2>
+          <div class="title-subheader">
+            <h2>Welcome To My Portofolio,</h2>
+            <h2>I am an Android and Web Developer</h2>
+          </div>
           <h2 class="title-subheader-2"><i class="material-icons" style="font-size:15px;margin-right:5px;">email</i>rizkiadisaputra77@gmail.com</h2>
         </div>
         <div class="section"><a href="http://riskiadi.github.io/pdf/cv.pdf" class="download-button btn" style="margin-top:15px;"><i class="material-icons left">arrow_downward</i>CV</a>
@@ -204,15 +234,17 @@
       <img src="images/header.jpg" style="filter: brightness(50%);">
     </div>
   </div>
-  <div class="container">
+  <div class="container" style="padding-bottom:15px;">
     <div class="row">
       <div class="col s12 center-align">
         <h2 class="content-1 section-title">ABOUT</h2>
         <div style="display: inline-block;width: 100px;height: 3px; background-color: #45474A;position: relative;"></div>
       </div>
     </div>
-    <div class="row">
-      <div class="col push-m3 m6 center-align about-text">
+
+    <div class="row about-section">
+
+      <div class="col m6 s12 center-align about-text">
         <p class="text-bold" style="font-size:19px;">
           I am an Android and Web Developer from Indonesia.
           I have developed several desktop, web,
@@ -220,7 +252,7 @@
           So Android, Web, and IoT development is my serious passion.</p>
       </div>
 
-      <div class="col s12 progresses">
+      <div class="col m6 s12">
 
         <div class="col s12" style="margin: 7px 0px 7px 0;">
           <div class="w3-border">
@@ -288,10 +320,11 @@
 
       </div>
     </div>
+
   </div>
 
   <div class="center-align" style="background-color:#F5F5F5;">
-    <div class=" section">
+    <div class="section">
 
       <div class="row">
         <div class="col s12">
@@ -514,6 +547,7 @@
 
   <div id="modal7" class="modal">
     <div class="modal-content">
+      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-5.jpg">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-1.png">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-2.png" style="width:50%;margin:10px auto 10px auto;">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-3.png" style="width:50%;margin:10px auto 10px auto;">
