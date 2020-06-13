@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="vendor/carousel/style.css">
   <style media="screen">
     ::-webkit-scrollbar {
       width: 10px;
@@ -102,13 +105,19 @@
     }
 
     .col .contact a {
-      color: #333333;
+      color: #FFFFFF;
       display: inline-block;
     }
 
-    .col .contact a:hover {
+    .col .contact a:hover,
+    .col .contact a:hover p {
       transition: all 0.2s;
-      border-bottom: 2px solid #333333;
+      border-bottom: 1px solid #FFFFFF;
+    }
+
+    .col .contact a:hover p {
+      transition: all 0.2s;
+      padding: 3px 0 3px 0;
     }
 
     .contact p {
@@ -148,7 +157,7 @@
       vertical-align: middle;
     }
 
-    .about-text p{
+    .about-text p {
       margin-left: 20px;
       margin-right: 20px;
       vertical-align: middle;
@@ -166,7 +175,7 @@
       margin-top: 10px;
       margin-bottom: 10px;
       overflow: hidden;
-      background-image: linear-gradient(90deg,#2c64c3,#5888d8);
+      background-image: linear-gradient(90deg, #2c64c3, #5888d8);
       border-radius: 20px 2px 20px 2px;
     }
 
@@ -201,7 +210,14 @@
       background: #abc3eb;
     }
 
+    /* Phone */
     @media only screen and (max-width: 600px) {
+
+      .section .container.footer {
+        margin-top: 0;
+        padding: 0;
+      }
+
       .about-text {
         vertical-align: middle;
         margin-top: 0px !important;
@@ -225,16 +241,51 @@
       }
 
     }
-    .no-js #loader { display: none;  }
-    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+    .section .row .card,
+    .section .row .card-image img {
+      margin: 0.5rem 0 1rem 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-radius: 0px;
+    }
+
+    /* Tablet */
+    @media only screen and (min-width: 600px) {
+      .section .container.footer {
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+
+    /* Desktop */
+    @media only screen and (min-width: 992px) {
+      .section .container.footer {
+        margin-top: 20px;
+        padding: 0 7em 0 7em;
+      }
+    }
+
+    .no-js #loader {
+      display: none;
+    }
+
+    .js #loader {
+      display: block;
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+
     .se-pre-con {
-    	position: fixed;
-    	left: 0px;
-    	top: 0px;
-    	width: 100%;
-    	height: 100%;
-    	z-index: 9999;
-    	background: url("https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/loading.gif") center no-repeat #fff;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url("https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/loading.gif") center no-repeat #fff;
     }
   </style>
   <title>Rizki Adi Saputra</title>
@@ -250,7 +301,7 @@
 
 <body>
 
-  <div class="se-pre-con"></div>
+  <!-- <div class="se-pre-con"></div> -->
 
   <!-- Content -->
   <div class="parallax-container center valign-wrapper">
@@ -507,137 +558,124 @@
     </div>
   </div>
 
-  <div class="container center-align">
-    <div class="section">
+  <div class="center-align" style="background-color:#FFFFFF;">
+    <div class="section container">
       <div class="row">
         <div class="col s12">
-          <h4 class="section-title">CONTACT</h4>
+          <h4 class="section-title">GALLERY</h4>
           <div style="display: inline-block;width: 100px;height: 3px; background-color: #45474A;position: relative;margin-bottom:25px;margin-top:15px;"></div>
         </div>
       </div>
       <div class="row">
-
-        <div class="col m2 push-m1 s4">
-          <div class="contact">
-            <a href="https://www.instagram.com/rizkiadisp/">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g fill="#333333">
-                    <path
-                      d="M57.33333,21.5c-19.78717,0 -35.83333,16.04617 -35.83333,35.83333v57.33333c0,19.78717 16.04617,35.83333 35.83333,35.83333h57.33333c19.78717,0 35.83333,-16.04617 35.83333,-35.83333v-57.33333c0,-19.78717 -16.04617,-35.83333 -35.83333,-35.83333zM129,35.83333c3.956,0 7.16667,3.21067 7.16667,7.16667c0,3.956 -3.21067,7.16667 -7.16667,7.16667c-3.956,0 -7.16667,-3.21067 -7.16667,-7.16667c0,-3.956 3.21067,-7.16667 7.16667,-7.16667zM86,50.16667c19.78717,0 35.83333,16.04617 35.83333,35.83333c0,19.78717 -16.04617,35.83333 -35.83333,35.83333c-19.78717,0 -35.83333,-16.04617 -35.83333,-35.83333c0,-19.78717 16.04617,-35.83333 35.83333,-35.83333zM86,64.5c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              <p>INSTAGRAM</p>
-            </a>
+        <div class="col m3 s12">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/gallery/img1.jpg">
+            </div>
           </div>
         </div>
-
-        <div class="col m2 push-m1 s4">
-          <div class="contact">
-            <a href="https://www.facebook.com/rizkiadisaputra77">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g fill="#333333">
-                    <path
-                      d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,35.9265 26.4665,65.5965 60.9525,70.778v-51.78633h-17.73033v-18.84117h17.73033v-12.5345c0,-20.75467 10.11217,-29.8635 27.36233,-29.8635c8.26317,0 12.62767,0.60917 14.69883,0.88867v16.44033h-11.76767c-7.32433,0 -9.88283,6.9445 -9.88283,14.7705v10.2985h21.46417l-2.90967,18.84117h-18.54733v51.93683c34.9805,-4.73717 61.963,-34.65083 61.963,-70.9285c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              <p>FACEBOOK</p>
-            </a>
+        <div class="col m3 s12">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/gallery/img2.jpg">
+            </div>
           </div>
         </div>
-
-        <div class="col m2 push-m1 s4">
-          <div class="contact">
-            <a href="https://play.google.com/store/apps/developer?id=Alkalynx">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-                <title />
-                <g data-name="Google Play" id="Google_Play">
-                  <path d="M12.47,11.66,1.87.16A.5.5,0,0,0,1,.5v23a.5.5,0,0,0,.87.34l10.6-11.5A.5.5,0,0,0,12.47,11.66Z" style="fill:#333333" />
-                  <path d="M13.87,13.18a.52.52,0,0,0-.74,0l-8.28,9a.5.5,0,0,0,.62.77c3.2-1.85,7.18-4.19,10.75-6.31a.5.5,0,0,0,.11-.77Z" style="fill:#333333" />
-                  <path d="M22.5,11.12h0L18,8.45a.5.5,0,0,0-.62.09l-2.88,3.12a.5.5,0,0,0,0,.68l2.88,3.12a.5.5,0,0,0,.62.09l4.46-2.67a1,1,0,0,0,0-1.77Zm-.26.43Z" style="fill:#333333" />
-                  <path d="M13.14,10.82a.5.5,0,0,0,.74,0l2.47-2.68a.5.5,0,0,0-.11-.77C12.65,5.25,8.67,2.92,5.48,1.06a.5.5,0,0,0-.62.77Z" style="fill:#333333" />
-                </g>
-              </svg>
-              <p>PLAYSTORE</p>
-            </a>
+        <div class="col m3 s12">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/gallery/img3.jpg">
+            </div>
           </div>
         </div>
-
-        <div class="col m2 push-m1 s4">
-          <div class="contact">
-            <a href="https://github.com/riskiadi">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g fill="#333333">
-                    <path
-                      d="M86,14.33333c-39.58463,0 -71.66667,32.08203 -71.66667,71.66667c0,39.58464 32.08203,71.66667 71.66667,71.66667c39.58464,0 71.66667,-32.08203 71.66667,-71.66667c0,-39.58463 -32.08203,-71.66667 -71.66667,-71.66667zM86,28.66667c31.60612,0 57.33333,25.72722 57.33333,57.33333c0,3.35938 -0.33594,6.66276 -0.89583,9.85417c-1.76367,-0.39192 -4.36719,-0.86784 -7.39062,-0.89583c-2.23958,-0.02799 -5.03906,0.33594 -7.39062,0.67188c0.81185,-2.49153 1.34375,-5.23503 1.34375,-8.0625c0,-6.88672 -3.35937,-13.29753 -8.73437,-18.58854c1.48372,-5.51497 2.93945,-14.97722 -0.89583,-18.8125c-11.33789,0 -17.60872,8.09049 -17.91667,8.51042c-3.49935,-0.83984 -7.11067,-1.34375 -10.97396,-1.34375c-4.95508,0 -9.68619,0.89583 -14.10937,2.23958l1.34375,-1.11979c0,0 -6.29883,-8.73437 -17.91667,-8.73437c-4.05924,4.08724 -2.21159,14.44531 -0.67187,19.70833c-5.48698,5.23503 -8.95833,11.42188 -8.95833,18.14063c0,2.35156 0.5599,4.59115 1.11979,6.71875c-1.98763,-0.22396 -9.1543,-0.89583 -12.09375,-0.89583c-2.60351,0 -6.63476,0.61589 -9.85417,1.34375c-0.44792,-2.85547 -0.67187,-5.76692 -0.67187,-8.73437c0,-31.60612 25.72722,-57.33333 57.33333,-57.33333zM39.19271,95.18229c2.82747,0 11.42188,1.00781 12.54167,1.11979c0.13997,0.39193 0.27995,0.75586 0.44792,1.11979c-3.07942,-0.27994 -9.04232,-0.69987 -12.98958,-0.22396c-2.63151,0.30794 -5.99088,1.25976 -8.95833,2.01563c-0.22396,-0.89583 -0.5039,-1.76367 -0.67187,-2.6875c3.13542,-0.67187 7.25065,-1.34375 9.63021,-1.34375zM135.04688,96.75c2.85547,0.02799 5.45899,0.50391 7.16667,0.89583c-0.08399,0.47591 -0.33594,0.86784 -0.44792,1.34375c-1.81966,-0.41992 -4.8151,-1.03581 -8.28646,-1.11979c-1.67969,-0.02799 -4.36719,0.05599 -6.71875,0.22396c0.11198,-0.22396 0.13997,-0.44792 0.22396,-0.67187c2.43555,-0.33594 5.54297,-0.69987 8.0625,-0.67187zM43.67188,98.76563c4.03125,0.02799 7.81055,0.30794 9.40625,0.44792c3.75131,6.9987 11.33789,12.17774 23.06771,14.33333c-2.88347,1.5957 -5.45899,3.83528 -7.39062,6.49479c-1.67969,0.13997 -3.44336,0.22396 -5.15104,0.22396c-4.98307,0 -8.09049,-4.45117 -10.75,-8.28646c-2.6875,-3.83528 -5.99088,-4.25521 -7.83854,-4.47917c-1.87565,-0.22396 -2.51953,0.83985 -1.56771,1.56771c5.45899,4.19922 7.41862,9.18229 9.63021,13.66146c1.98763,4.03125 6.15885,6.27083 10.75,6.27083h0.89583c-0.13997,0.78385 -0.22396,1.51172 -0.22396,2.23958v7.83854c-16.54492,-6.69076 -29.14258,-20.82812 -33.81771,-38.29687c2.93945,-0.72786 6.24284,-1.48372 8.73438,-1.79167c1.14778,-0.13997 2.60351,-0.25195 4.25521,-0.22396zM133.47917,99.66146c3.2194,0.08399 6.07487,0.69987 7.83854,1.11979c-3.94726,14.83724 -13.68945,27.18294 -26.65104,34.71354v-4.25521c0,-6.10286 -4.8151,-13.9414 -11.64583,-17.69271c11.33789,-2.07161 18.72851,-7.02669 22.61979,-13.66146c2.71549,-0.19597 5.9069,-0.27994 7.83854,-0.22396zM89.58333,129c1.95964,0 3.58333,1.6237 3.58333,3.58333v10.30208c-2.35156,0.30794 -4.73112,0.44792 -7.16667,0.44792v-10.75c0,-1.95963 1.6237,-3.58333 3.58333,-3.58333zM75.25,136.16667c1.95964,0 3.58333,1.6237 3.58333,3.58333v3.13542c-2.40755,-0.30794 -4.8431,-0.75586 -7.16667,-1.34375v-1.79167c0,-1.95963 1.6237,-3.58333 3.58333,-3.58333zM103.91667,136.16667c1.73568,0 3.2474,1.25976 3.58333,2.91146c-2.32357,0.95183 -4.70312,1.81966 -7.16667,2.46354v-1.79167c0,-1.95963 1.6237,-3.58333 3.58333,-3.58333z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              <p>GITHUB</p>
-            </a>
+        <div class="col m3 s12">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="images/gallery/img4.jpg">
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col m2 push-m1 s4">
-          <div class="contact">
-            <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
-                  text-anchor="none" style="mix-blend-mode: normal">
-                  <path d="M0,172v-172h172v172z" fill="none"></path>
-                  <g fill="#333333">
-                    <path
-                      d="M136.16667,21.5h-100.33333c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v100.33333c0,7.91917 6.41417,14.33333 14.33333,14.33333h100.33333c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-100.33333c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM64.5,121.83333h-18.0815v-50.16667h18.0815zM55.14033,62.47183c-5.5255,0 -9.21633,-3.68367 -9.21633,-8.6c0,-4.91633 3.68367,-8.6 9.8255,-8.6c5.5255,0 9.21633,3.68367 9.21633,8.6c0,4.91633 -3.68367,8.6 -9.8255,8.6zM129,121.83333h-17.501v-27.41967c0,-7.58233 -4.6655,-9.331 -6.41417,-9.331c-1.74867,0 -7.58233,1.16817 -7.58233,9.331c0,1.16817 0,27.41967 0,27.41967h-18.0815v-50.16667h18.0815v7.00183c2.32917,-4.085 6.99467,-7.00183 15.74517,-7.00183c8.7505,0 15.75233,7.00183 15.75233,22.747z">
-                    </path>
-                  </g>
-                </g>
-              </svg>
-              <p>LINKEDIN</p>
-            </a>
-          </div>
+  <!-- start F O O T E R  -->
+  <div class="section" style="background:#222222;">
+    <div class="row center-align container footer">
+      <div class="col m2 push-m1 s12">
+        <div class="contact">
+          <a href="https://www.instagram.com/rizkiadisp/">
+            <img src="images/icon/instagram.svg" width="48px" height="48px" />
+            <p class="white-text">INSTAGRAM</p>
+          </a>
         </div>
+      </div>
 
+      <div class="col m2 push-m1 s12">
+        <div class="contact">
+          <a href="https://www.facebook.com/rizkiadisaputra77">
+            <img src="images/icon/facebook.svg" width="48px" height="48px" />
+            <p class="white-text">FACEBOOK</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col m2 push-m1 s12">
+        <div class="contact">
+          <a href="https://play.google.com/store/apps/developer?id=Alkalynx">
+            <img src="images/icon/playstore.svg" width="48px" height="48px" />
+            <p class="white-text">PLAYSTORE</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col m2 push-m1 s12">
+        <div class="contact">
+          <a href="https://github.com/riskiadi">
+            <img src="images/icon/github.svg" width="48px" height="48px" />
+            <p class="white-text">GITHUB</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col m2 push-m1 s12">
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/">
+            <img src="images/icon/linkedin.svg" width="48px" height="48px" />
+            <p class="white-text">LINKEDIN</p>
+          </a>
+        </div>
       </div>
 
     </div>
-  </div>
+    <div class="row center-align" style="margin-top:50px;margin-bottom:30px;">
+      <div class="col s12">
+        <span style="color:rgb(125, 125, 125)"> © 2020 Rizki Adi Saputra</span>
 
-  <div class="center-align" style="margin:10px;">
-    <h4 style="font-size:19px;">Credit</h4>
-    <a href="https://www.freepik.com/free-photos-vectors/computer">Computer vector created by macrovector - www.freepik.com</a>
-  </div>
-
-  <div class="container center-align">
-    <div class="divider"></div>
-    <div class="section">
-        <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+        <!-- Histats.com  (div with counter) -->
+        <div id="histats_counter"></div>
         <!-- Histats.com  START  (aync)-->
-        <script type="text/javascript">var _Hasync= _Hasync|| [];
-        _Hasync.push(['Histats.start', '1,4414939,4,429,112,75,00011111']);
-        _Hasync.push(['Histats.fasi', '1']);
-        _Hasync.push(['Histats.track_hits', '']);
-        (function() {
-        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-        hs.src = ('//s10.histats.com/js15_as.js');
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-        })();</script>
-        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4414939&101" alt="" border="0"></a></noscript>
+        <script type="text/javascript">
+          var _Hasync = _Hasync || [];
+          _Hasync.push(['Histats.start', '1,4414939,4,429,112,75,00011111']);
+          _Hasync.push(['Histats.fasi', '1']);
+          _Hasync.push(['Histats.track_hits', '']);
+          (function() {
+            var hs = document.createElement('script');
+            hs.type = 'text/javascript';
+            hs.async = true;
+            hs.src = ('//s10.histats.com/js15_as.js');
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+          })();
+        </script>
+        <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4414939&101" alt="" border="0"></a></noscript>
         <!-- Histats.com  END  -->
+
+      </div>
     </div>
   </div>
+
+  <!-- end F O O T E R  -->
 
   <div id="modal1" class="modal">
     <div class="modal-content">
