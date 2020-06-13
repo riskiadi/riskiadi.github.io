@@ -225,11 +225,32 @@
       }
 
     }
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+    	position: fixed;
+    	left: 0px;
+    	top: 0px;
+    	width: 100%;
+    	height: 100%;
+    	z-index: 9999;
+    	background: url("https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/loading.gif") center no-repeat #fff;
+    }
   </style>
   <title>Rizki Adi Saputra</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script>
+    $(window).load(function() {
+      $(".se-pre-con").fadeOut("slow");
+      $(".se-pre-con").remove();
+    });
+  </script>
 </head>
 
 <body>
+
+  <div class="se-pre-con"></div>
 
   <!-- Content -->
   <div class="parallax-container center valign-wrapper">
@@ -611,7 +632,7 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot2.jpg" style="width:50%;margin:10px auto 10px auto;">
-      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot.jpg" style="width:50%;margin:10px auto 10px auto;">      
+      <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot.jpg" style="width:50%;margin:10px auto 10px auto;">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot3.jpg" style="width:50%;margin:10px auto 10px auto;">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-1.png" style="width:50%;margin:10px auto 10px auto;">
       <img class="materialboxed" src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-2.png" style="width:50%;margin:10px auto 10px auto;">
@@ -690,6 +711,7 @@
       $('.modal').modal();
     });
   </script>
+
 </body>
 
 </html>
