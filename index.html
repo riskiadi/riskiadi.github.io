@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="vendor/carousel/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style media="screen">
     ::-webkit-scrollbar {
       width: 10px;
@@ -75,12 +75,6 @@
       font-size: 15px;
     }
 
-    .content-1 {
-      margin-bottom: 10px;
-      text-align: center;
-      color: #45474A;
-    }
-
     .progress {
       background: rgba(51, 51, 51, 0.15);
       width: 35%;
@@ -104,7 +98,11 @@
       background-color: rgba(255, 255, 255, 0.4)
     }
 
-    .col .contact a img{
+    .action-button{
+      background-image: linear-gradient(90deg, #2183f5, #3a47c9);
+    }
+
+    .col .contact a img {
       width: 2.5em;
       height: 2.5em;
       display: inline-block;
@@ -154,7 +152,19 @@
     }
 
     .section-title {
-      font-size: 38px;
+      font-size: 32px !important;
+      position: relative;
+      display: inline-block;
+      color: #282828;
+    }
+    .section-title:after {
+      position: absolute;
+      content: '';
+      border-bottom: 1px solid #282828;
+      width: 60%;
+      transform: translateX(-50%);
+      bottom: -15px;
+      left: 50%;
     }
 
     .about-section {
@@ -162,11 +172,11 @@
     }
 
     .skill-box {
+      min-width: 100px;
       margin-top: 10px;
       margin-bottom: 10px;
       overflow: hidden;
-      background-image: linear-gradient(90deg, #2c64c3, #5888d8);
-      border-radius: 20px 2px 20px 2px;
+      background-image: linear-gradient(90deg, #2183f5, #3a47c9);
     }
 
     .skill-box h2 {
@@ -190,14 +200,14 @@
     .skill-box .skill-progress {
       float: left;
       height: 10px;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.35);
       width: 100%;
     }
 
     .skill-box .skill-fill {
       float: left;
       height: 10px;
-      background: #abc3eb;
+      background-image: linear-gradient(90deg, #6cadf7, #9bc7fa);
     }
 
     /* Phone */
@@ -215,7 +225,7 @@
       }
 
       .section-title {
-        font-size: 30px;
+        font-size: 30px !important;
       }
 
       .parallax img {
@@ -230,15 +240,18 @@
         margin: 30px;
       }
 
-      .skill-box h2, .skill-box h3{
+      .skill-box h2,
+      .skill-box h3 {
         font-size: 13px;
       }
 
       .skill-box {
         border-radius: 0px;
+        max-width: none;
       }
 
-      .skill-box .skill-fill, .skill-box .skill-progress {
+      .skill-box .skill-fill,
+      .skill-box .skill-progress {
         height: 7px;
       }
 
@@ -259,6 +272,9 @@
         margin-top: 0;
         padding: 0;
       }
+      .skill-box {
+        max-width: none;
+      }
     }
 
     /* Desktop */
@@ -266,6 +282,9 @@
       .section .container.contact-wrapper {
         margin-top: 20px;
         padding: 0 11em 0 11em;
+      }
+      .skill-box {
+        max-width: 200px;
       }
     }
 
@@ -329,12 +348,9 @@
 
   <div style="padding-bottom:15px;position:relative">
 
-    <!-- <img src="images/flat_illustration.svg" alt="flat illustration image" class="hide-on-med-and-down" style="position:absolute;top:0;z-index:-1;left:0;" width="380"> -->
-
     <div class="row">
       <div class="col s12 center-align">
-        <h2 class="content-1 section-title">ABOUT</h2>
-        <div style="display: inline-block;width: 100px;height: 3px; background-color: #45474A;position: relative;"></div>
+        <h2 class="section-title">ABOUT</h2>
       </div>
     </div>
 
@@ -350,14 +366,13 @@
 
     <div class="row">
       <div class="col s12 center-align">
-        <h2 class="content-1 section-title">SKILLS</h2>
-        <div style="display: inline-block;width: 100px;height: 3px; background-color: #45474A;position: relative;"></div>
+        <h2 class="section-title">SKILLS</h2>
       </div>
     </div>
 
     <div class="row container">
 
-      <div class="col l3 m6 s6">
+      <div class="col l3 m6 s6 center-align">
         <div class="skill-box">
           <h2>Java</h2>
           <h3>90%</h3>
@@ -367,7 +382,7 @@
         </div>
       </div>
 
-      <div class="col l3 m6 s6">
+      <div class="col l3 m6 s6 center-align">
         <div class="skill-box">
           <h2>Kotlin</h2>
           <h3>90%</h3>
@@ -377,7 +392,7 @@
         </div>
       </div>
 
-      <div class="col l3 m6 s6">
+      <div class="col l3 m6 s6 center-align">
         <div class="skill-box">
           <h2>IoT</h2>
           <h3>75%</h3>
@@ -387,9 +402,9 @@
         </div>
       </div>
 
-      <div class="col l3 m6 s6">
+      <div class="col l3 m6 s6 center-align">
         <div class="skill-box">
-          <h2>PHP</h2>
+          <h2>Dart</h2>
           <h3>85%</h3>
           <div class="skill-progress">
             <div class="skill-fill" style="width:85%;"></div>
@@ -419,7 +434,7 @@
 
       <div class="col l3 m6 s6">
         <div class="skill-box">
-          <h2>JavaScript</h2>
+          <h2>JS</h2>
           <h3>80%</h3>
           <div class="skill-progress">
             <div class="skill-fill" style="width:80%;"></div>
@@ -429,8 +444,8 @@
 
       <div class="col l3 m6 s6">
         <div class="skill-box">
-          <h2>CodeIgniter</h2>
-          <h3>70%</h3>
+          <h2>PHP</h2>
+          <h3>85%</h3>
           <div class="skill-progress">
             <div class="skill-fill" style="width:70%;"></div>
           </div>
@@ -482,91 +497,89 @@
   </div>
 
   <div class="center-align" style="background-color:#F5F5F5;">
-    <div class="section" style="padding-bottom:6em;">
-
-      <div class="row">
-        <div class="col s12">
-          <h4 class="section-title">PROJECTS</h4>
-          <div style="display: inline-block;width: 100px;height: 3px; background-color: #45474A;position: relative;"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal1">
-            <h1 class="portfolio-header">IoT Plant Growth Monitoring</br>(Lynth Garden)</h1>
-          </a>
-        </div>
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal3">
-            <h1 class="portfolio-header">Mobile Roulette Prize Application</br>(PT. Djarum - Kudus )</h1>
-          </a>
-        </div>
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal8">
-            <h1 class="portfolio-header">Free Open VPN Account Application</br>(Data Scraping)</h1>
-          </a>
-        </div>
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal7">
-            <h1 class="portfolio-header">Hunter VPN Application, Provide Free VPN Service</h1>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal5">
-            <h1 class="portfolio-header">Desktop Software Protector From User Duplication</br>(ZXC)</h1>
-          </a>
-        </div>
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal6">
-            <h1 class="portfolio-header">Streamy Video Stream, Streaming Videos on a Local Network</h1>
-          </a>
-        </div>
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal4">
-            <h1 class="portfolio-header">Mobile Expense Report Application (PT. Eka Surya Alam)</h1>
-          </a>
-        </div>
-        <div class="col m3 s12">
-          <a class="modal-trigger" href="#modal2">
-            <h1 class="portfolio-header">System Administrator Jersey Selling and Tracking System</br>(ProjectOne)</h1>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s12">
-          <h4 class="section-title">CERTIFICATES</h4>
-          <div style="display: inline-block;width: 100px;height: 3px; background-color: #45474A;position: relative;"></div>
-        </div>
-      </div>
+    <div class="section" style="padding-bottom:5em;padding-top:3em;">
 
       <div class="row">
 
-        <div class="col m4 s12">
-          <a class="modal-trigger" href="pdf/cert_game.pdf">
-            <h1 class="portfolio-header">MEMBANGUN GAME 2D & 3D DENGAN UNITY</h1>
-          </a>
+        <div class="col l4 push-l2 s12">
+          <h2 class="section-title">PROJECTS</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>IoT Plant Growth Monitoring (Lynth Garden)</td>
+                <td><a href="#modal1" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>Mobile Roulette Prize Application (PT.Djarum - Kudus)</td>
+                <td><a href="#modal3" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>Free Open VPN Account Scraping Application</td>
+                <td><a href="#modal8" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>Hunter VPN Application, Provide Free VPN Service</td>
+                <td><a href="#modal7" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>Desktop Software Protector From User Duplication (ZXC)</td>
+                <td><a href="#modal5" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>Streamy Video Stream, Streaming Videos on a Local Network</td>
+                <td><a href="#modal6" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>Mobile Expense Report Application (PT. Eka Surya Alam)</td>
+                <td><a href="#modal4" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+              <tr>
+                <td>System Administrator Jersey Selling and Tracking System (ProjectOne)</td>
+                <td><a href="#modal2" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="col m4 s12">
-          <a class="modal-trigger" href="pdf/cert.pdf">
-            <h1 class="portfolio-header">SERTIFIKAT KOMPETENSI</h1>
-          </a>
-        </div>
+        <div class="col l4 push-l2 s12">
+          <h2 class="section-title">CERTIFICATES</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
 
-        <div class="col m4 s12">
-          <a class="modal-trigger" href="pdf/cert_kotlin.pdf">
-            <h1 class="portfolio-header">MEMULAI PEMROGRAMAN DENGAN KOTLIN</h1>
-          </a>
+            <tbody>
+              <tr>
+                <td>SERTIFIKAT KOMPETENSI</td>
+                <td><a href="pdf/cert.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+              </tr>
+              <tr>
+                <td>MEMULAI PEMROGRAMAN DENGAN DART</td>
+                <td><a href="pdf/cert_dart.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+              </tr>
+              <tr>
+                <td>MEMULAI PEMROGRAMAN DENGAN KOTLIN</td>
+                <td><a href="pdf/cert_kotlin.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+              </tr>
+              <tr>
+                <td>MEMBANGUN GAME 2D & 3D DENGAN UNITY</td>
+                <td><a href="pdf/cert_game.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       </div>
 
-    </div>
   </div>
 
   <!-- start F O O T E R  -->
@@ -574,31 +587,31 @@
     <div class="row center-align container contact-wrapper">
       <div class="col m2 push-m1 s2">
         <div class="contact">
-          <a href="https://www.instagram.com/rizkiadisp/"><img src="images/icon/instagram.svg"/></a>
+          <a href="https://www.instagram.com/rizkiadisp/"><img src="images/icon/instagram.svg" /></a>
         </div>
       </div>
 
       <div class="col m2 push-m1 s2">
         <div class="contact">
-          <a href="https://www.facebook.com/rizkiadisaputra77"><img src="images/icon/facebook.svg"/></a>
+          <a href="https://www.facebook.com/rizkiadisaputra77"><img src="images/icon/facebook.svg" /></a>
         </div>
       </div>
 
       <div class="col m2 push-m1 s2">
         <div class="contact">
-          <a href="https://play.google.com/store/apps/developer?id=Alkalynx"><img src="images/icon/playstore.svg"/></a>
+          <a href="https://play.google.com/store/apps/developer?id=Alkalynx"><img src="images/icon/playstore.svg" /></a>
         </div>
       </div>
 
       <div class="col m2 push-m1 s2">
         <div class="contact">
-          <a href="https://github.com/riskiadi"><img src="images/icon/github.svg"/></a>
+          <a href="https://github.com/riskiadi"><img src="images/icon/github.svg" /></a>
         </div>
       </div>
 
       <div class="col m2 push-m1 s2">
         <div class="contact">
-          <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/"><img src="images/icon/linkedin.svg"/></a>
+          <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/"><img src="images/icon/linkedin.svg" /></a>
         </div>
       </div>
 
