@@ -183,6 +183,7 @@
     }
 
     .skill-box {
+      border-radius: 10px;
       min-width: 100px;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -323,17 +324,19 @@
   <title>Rizki Adi Saputra</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <!-- Loading Animation
   <script>
     $(window).load(function() {
       $(".se-pre-con").fadeOut("slow");
       $(".se-pre-con").remove();
     });
-  </script>
+  </script> -->
 </head>
 
 <body>
 
-  <div class="se-pre-con"></div>
+  <!-- Loading Animation
+  <div class="se-pre-con"></div> -->
 
   <!-- Content -->
   <div class="parallax-container center valign-wrapper">
@@ -485,20 +488,20 @@
 
       <div class="col l3 m6 s6">
         <div class="skill-box">
-          <h2>VB</h2>
-          <h3>75%</h3>
+          <h2>jQuery</h2>
+          <h3>80%</h3>
           <div class="skill-progress">
-            <div class="skill-fill" style="width:75%;"></div>
+            <div class="skill-fill" style="width:80%;"></div>
           </div>
         </div>
       </div>
 
       <div class="col l3 m6 s6">
         <div class="skill-box">
-          <h2>jQuery</h2>
-          <h3>80%</h3>
+          <h2>...</h2>
+          <h3>%</h3>
           <div class="skill-progress">
-            <div class="skill-fill" style="width:80%;"></div>
+            <div class="skill-fill" style="width:0%;"></div>
           </div>
         </div>
       </div>
@@ -571,27 +574,52 @@
             <tbody>
               <tr>
                 <td>SERTIFIKAT KOMPETENSI</td>
-                <td><a href="pdf/cert.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+                <td>
+                  <a href="#modal-cert-1" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>SERTIFIKAT PELATIHAN</td>
+                <td>
+                  <a href="#modal-cert-7" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert_pelatihan.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
               </tr>
               <tr>
                 <td>MEMULAI PEMROGRAMAN DENGAN DART</td>
-                <td><a href="pdf/cert_dart.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+                <td>
+                  <a href="#modal-cert-2" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert_dart.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
               </tr>
               <tr>
                 <td>MEMULAI PEMROGRAMAN DENGAN KOTLIN</td>
-                <td><a href="pdf/cert_kotlin.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+                <td>
+                  <a href="#modal-cert-3" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert_kotlin.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
               </tr>
               <tr>
                 <td>BELAJAR PRINSIP PEMROGRAMAN SOLID</td>
-                <td><a href="pdf/cert_solid.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+                <td>
+                  <a href="#modal-cert-4" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert_solid.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
               </tr>
               <tr>
                 <td>BELAJAR MEMBUAT APLIKASI ANDROID PEMULA</td>
-                <td><a href="pdf/cert_android_pemula.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+                <td>
+                  <a href="#modal-cert-5" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert_android_pemula.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
               </tr>
               <tr>
                 <td>MEMBANGUN GAME 2D & 3D DENGAN UNITY</td>
-                <td><a href="pdf/cert_game.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a></td>
+                <td>
+                  <a href="#modal-cert-6" class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">remove_red_eye</i></a>
+                  <a href="pdf/cert_game.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i class="material-icons">file_download</i></a>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -646,6 +674,51 @@
   </div>
 
   <!-- end F O O T E R  -->
+
+
+
+  <!-- ======= CERTIFICATES MODALS ======= -->
+
+  <div id="modal-cert-1" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert.png"></a>
+    </div>
+  </div>
+  <div id="modal-cert-2" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_dart.png"></a>
+    </div>
+  </div>
+  <div id="modal-cert-3" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_kotlin.png"></a>
+    </div>
+  </div>
+  <div id="modal-cert-4" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_solid.png"></a>
+    </div>
+  </div>
+  <div id="modal-cert-5" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_android_pemula.png"></a>
+    </div>
+  </div>
+  <div id="modal-cert-6" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_game.png"></a>
+    </div>
+  </div>
+  <div id="modal-cert-7" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_pelatihan_1.png"></a>
+      <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_pelatihan_2.png"></a>
+    </div>
+  </div>
+
+
+
+  <!-- ======= PROJECTS MODALS ======= -->
 
   <div id="modal1" class="modal">
     <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%" data-height="90%">
