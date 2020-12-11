@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
 
   <!-- Fotorama from CDNJS, 19 KB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -44,32 +45,77 @@
       margin: 0;
     }
 
-    .parallax-container {
-      height: 550px;
+    .nav-shadow {
+      position: absolute;
+      width: 100%;
+      height: 7em;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.26), #ffffff00);
     }
 
-    .parallax img {
-      max-height: 250%;
+    .navbar {
+      list-style-type: none;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      float: right;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 20px 10px 20px;
+      font-size: 17px;
+    }
+
+    .navbar li a:hover {
+      background-color: rgb(255, 255, 255, 0.1);
+      color: white;
+      font-weight: bold;
+    }
+
+    .parallax-container {
+      height: 100%;
     }
 
     .profile-photo {
       width: 160px;
     }
 
-    .title-header {
+    .title-header h1 {
       margin: 10px 0 0 0;
       font-size: 25px;
     }
 
+    .title-header span {
+      font-size: 18px;
+    }
+
+    .title-header {
+      margin: 15px 0 0 0;
+    }
+
     .title-subheader {
       margin-top: 25px;
-      margin-bottom: 25px;
+      margin-bottom: 34px;
     }
 
     .title-subheader h2 {
-      margin: 10px 0 0 0;
-      font-size: 15px;
-      line-height: 20px;
+      text-align: justify;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .title-subheader p {
+      text-align: left;
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+
+    .title-subheader p i {
+      margin-right: 7px;
     }
 
     .title-subheader-2 {
@@ -92,14 +138,24 @@
     }
 
     .download-button.btn {
+      box-shadow: none;
       background: none;
       color: white;
+      border-radius: 30px;
       border: 1px solid white;
     }
 
     .download-button:hover {
       transition: 0.2s all;
-      background-color: rgba(255, 255, 255, 0.4)
+      background-color: rgba(255, 255, 255, 0.8)
+    }
+
+    a.download-button:hover i {
+      color: #000;
+    }
+
+    a.download-button:hover {
+      color: #000;
     }
 
     .action-button {
@@ -127,7 +183,7 @@
     }
 
     .modal {
-      background: none;
+      background: black;
       max-width: 100%;
       max-height: 100%;
       box-shadow: none;
@@ -163,20 +219,38 @@
     }
 
     .section-title {
-      font-size: 32px !important;
+      font-size: 28px !important;
       position: relative;
       display: inline-block;
       color: #282828;
     }
 
-    .section-title:after {
+    .h-divider {
+      width: 100px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .d-left.h-divider:after {
       position: absolute;
       content: '';
-      border-bottom: 1px solid #282828;
-      width: 60%;
+      border: 1px solid transparent;
+      border-image: linear-gradient(to right, rgb(255, 255, 255, .0) 0%, white 100%);
+      border-image-slice: 1;
+      width: 80%;
       transform: translateX(-50%);
-      bottom: -15px;
-      left: 50%;
+      bottom: 5px;
+    }
+
+    .d-right.h-divider:after {
+      position: absolute;
+      content: '';
+      border: 1px solid transparent;
+      border-image: linear-gradient(to left, rgb(255, 255, 255, .0) 0%, white 100%);
+      border-image-slice: 1;
+      width: 80%;
+      transform: translateX(-50%);
+      bottom: 5px;
     }
 
     .about-section {
@@ -184,18 +258,16 @@
     }
 
     .skill-box {
-      border-radius: 10px;
       min-width: 100px;
       margin-top: 10px;
       margin-bottom: 10px;
       overflow: hidden;
-      background-image: linear-gradient(90deg, #2183f5, #3a47c9);
     }
 
     .skill-box h2 {
       float: left;
-      color: white;
-      font-size: 17px;
+      color: black;
+      font-size: 15px;
       margin: 0;
       line-height: 20px;
       padding: 12px 0 12px 10px;
@@ -203,8 +275,8 @@
 
     .skill-box h3 {
       float: right;
-      color: white;
-      font-size: 16px;
+      color: black;
+      font-size: 15px;
       margin: 0;
       line-height: 20px;
       padding: 12px 10px 12px 0;
@@ -213,14 +285,36 @@
     .skill-box .skill-progress {
       float: left;
       height: 10px;
-      background: rgba(0, 0, 0, 0.35);
+      background: rgba(0, 0, 0, 0.15);
       width: 100%;
     }
 
     .skill-box .skill-fill {
       float: left;
       height: 10px;
-      background-image: linear-gradient(90deg, #6cadf7, #9bc7fa);
+      background-image: linear-gradient(90deg, #2b44b7, #287cf3, #3383f4);
+    }
+
+    .socials a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      border: 1.5px solid white;
+      padding: 10px;
+    }
+
+    .socials a:hover {
+      transition: 0.2s all;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .socials a:hover i {
+      color: black;
+    }
+
+    .project-section {
+      background-image: linear-gradient(to bottom, rgba(0, 99, 198, 1), rgba(0, 89, 178, 1), rgba(0, 79, 158, 1), rgba(0, 69, 138, 1), rgba(0, 35, 69, 1));
     }
 
     /* Phone */
@@ -238,10 +332,11 @@
       }
 
       .section-title {
-        font-size: 30px !important;
+        font-size: 20px !important;
       }
 
       .parallax img {
+        object-fit: cover;
         max-height: 110%;
       }
 
@@ -268,15 +363,62 @@
         height: 7px;
       }
 
+      .title-subheader p {
+        text-align: center;
+        letter-spacing: 0px;
+      }
+
+      .parallax-container #parallax-content.container {
+        width: 100%;
+      }
+
+
+
+
     }
 
-    .section .row .card,
-    .section .row .card-image img {
-      margin: 0.5rem 0 1rem 0;
+    body nav {
+      background-image: linear-gradient(to left, #273CA5, #0074DD);
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .project .card {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
-      border-radius: 0px;
+    }
+
+    .project .card .card-content {
+      min-height: 7em !important;
+      max-height: 7em !important;
+    }
+
+    .project .card .card-image {
+      background-color: black;
+    }
+
+    .project a:hover {
+      display: block;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .project .card .card-image img {
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .project .card .card-image span {
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .project .card .card-title-shadow {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
     }
 
     /* Tablet */
@@ -321,7 +463,7 @@
       width: 100%;
       height: 100%;
       z-index: 9999;
-      background: url("https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/loading.gif") center no-repeat #fff;
+      background: url("images/loading.gif") center no-repeat #fff;
     }
   </style>
   <title>Rizki Adi Saputra</title>
@@ -342,378 +484,398 @@
   <div class="se-pre-con"></div> -->
 
   <!-- Content -->
-  <div class="parallax-container center valign-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 white-text" style="padding-top:30px;">
-          <img src="images/profile-white.jpg" alt="photo" class="circle responsive-img profile-photo">
-          <h1 class="title-header">RIZKI ADI SAPUTRA</h1>
-          <div class="title-subheader">
-            <h2>Welcome To My Portofolio,</h2>
-            <h2>I am an Android and Web Developer</h2>
-          </div>
-          <h2 class="title-subheader-2"><i class="material-icons"
-              style="font-size:15px;margin-right:5px;">email</i>rizkiadisaputra77@gmail.com</h2>
-        </div>
 
-        <div class="section">
-          <a href="http://riskiadi.github.io/pdf/cv_english.pdf" class="download-button btn" style="margin-top:15px;"><i
-              class="material-icons left">arrow_downward</i>CV (English)</a>
-          <a href="http://riskiadi.github.io/pdf/cv_bahasa.pdf" class="download-button btn" style="margin-top:15px;"><i
-              class="material-icons left">arrow_downward</i>CV (Indonesia)</a>
+  <div class="nav-shadow"></div>
+
+  <div class="parallax-container center">
+
+    <div class="container hide-on-med-and-down">
+      <ul class="navbar">
+        <li><a id="nav-button-project" href="javascript:void(0)">Proyek</a></li>
+        <li><a id="nav-button-skill" href="javascript:void(0)">Keahlian</a></li>
+      </ul>
+    </div>
+
+    <div id="parallax-content" class="container">
+      <div class="row">
+        <div class="col s12 white-text" style="margin-top: 30px;">
+
+          <img src="images/profile-white.jpg" alt="photo" class="circle responsive-img profile-photo">
+
+          <div class="title-header">
+            <span>Halo, saya </span>
+            <h1>RIZKI ADI SAPUTRA</h1>
+          </div>
+
+          <div class="title-subheader col s12 l8 offset-l2">
+
+            <h2>Saya adalah seorang pengembang perangkat lunak Android serta Web dan juga memiliki antusias terhadap
+              dunia IoT. Selain pengembang saya seorang publisher, ada beberapa aplikasi yang telah saya publish ke
+              Google Playstore.</h2>
+
+            <p><i class="fas fa-envelope"></i>rizkiadisaputra77@gmail.com</p>
+            <p><i class="fas fa-phone"></i>+6283838290060</p>
+
+          </div>
+
+          <!-- <div class="row">
+            <div class="col s12">
+              <div class="h-divider"></div>
+              <span>Feel free to contact me</span>
+              <div class="h-divider"></div>
+            </div>
+          </div> -->
+
+          <div class="socials row">
+            <div class="col s12">
+              <div class="h-divider d-left"></div>
+              <a class="white-text" href="https://www.instagram.com/rizkiadisp/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="white-text" href="https://play.google.com/store/apps/developer?id=Alkalynx">
+                <i class="fab fa-google-play"></i>
+              </a>
+              <a class="white-text" href="https://github.com/riskiadi">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="white-text" href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <div class="h-divider d-right"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l6 offset-l3 s12 section">
+              <a href="pdf/cv_bahasa.pdf" class="download-button btn" style="margin-top:15px; margin-left: 10px;"><i
+                  class="fas fa-file-contract left" style="font-size: 16px;"></i>Resume</a>
+              <a href="#modal-cert-button" class="download-button btn modal-trigger" style="margin-top:15px;"><i
+                  class="fas fa-award left" style="font-size: 16px;"></i>Sertifikat</a>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="title-subheader col s6 offset-s3">
+            <h2 class="title-subheader-2"><i class="material-icons"
+                style="font-size:15px;margin-right:5px;">email</i>rizkiadisaputra77@gmail.com</h2>
+          </div> -->
+
         </div>
 
       </div>
     </div>
     <div class="parallax">
-      <img class="responsive-img" src="images/header.jpg" style="filter: brightness(83%);">
+      <img class="responsive-img" src="images/banner.jpg" style="filter: brightness(85%);">
     </div>
   </div>
 
-  <div style="padding-bottom:15px;position:relative">
+  <div style="padding-bottom:15px;position:relative;">
 
-    <div class="row">
-      <div class="col s12 center-align">
-        <h2 class="section-title">ABOUT</h2>
+    <div class="row container center-align">
+      <div id="id-skill" class="col s12">
+        <h2 class="section-title">KEAHLIAN UMUM</h2>
       </div>
     </div>
 
-    <div class="row about-section">
-      <div class="col m6 push-m3 s12 center-align about-text">
-        <p class="text-bold" style="font-size:19px;">
-          I am an Android and Web Developer from Indonesia.
-          I have developed several desktop, web,
-          android, and IoT projects.
-          So Android, Web, and IoT development is my serious passion.</p>
+    <div class="row container"">
+
+      <div class=" col l3 m6 s6 center-align">
+      <div class="skill-box">
+        <h2>Dart</h2>
+        <h3>85%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:80%;"></div>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col s12 center-align">
-        <h2 class="section-title">SKILLS</h2>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>Flutter</h2>
+        <h3>90%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:85%;"></div>
+        </div>
       </div>
     </div>
 
-    <div class="row container" style="margin-top:40px;">
-
-      <div class="col l3 m6 s6 center-align">
-        <div class="skill-box">
-          <h2>Java</h2>
-          <h3>85%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:80%;"></div>
-          </div>
+    <div class="col l3 m6 s6 center-align">
+      <div class="skill-box">
+        <h2>Kotlin</h2>
+        <h3>90%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:90%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6 center-align">
-        <div class="skill-box">
-          <h2>Kotlin</h2>
-          <h3>90%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:90%;"></div>
-          </div>
+    <div class=" col l3 m6 s6 center-align">
+      <div class="skill-box">
+        <h2>Java</h2>
+        <h3>85%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:80%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6 center-align">
-        <div class="skill-box">
-          <h2>IoT</h2>
-          <h3>75%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:75%;"></div>
-          </div>
+    <div class="col l3 m6 s6 center-align">
+      <div class="skill-box">
+        <h2>IoT</h2>
+        <h3>75%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:75%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6 center-align">
-        <div class="skill-box">
-          <h2>Dart</h2>
-          <h3>85%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:80%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>HTML</h2>
+        <h3>95%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:95%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>HTML</h2>
-          <h3>95%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:95%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>CSS</h2>
+        <h3>90%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:90%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>CSS</h2>
-          <h3>90%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:90%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>JS</h2>
+        <h3>80%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:80%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>JS</h2>
-          <h3>80%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:80%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>PHP</h2>
+        <h3>85%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:85%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>PHP</h2>
-          <h3>85%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:85%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>C</h2>
+        <h3>75%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:75%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>C</h2>
-          <h3>75%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:75%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>UI/UX</h2>
+        <h3>80%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:80%;"></div>
         </div>
       </div>
+    </div>
 
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>UI/UX</h2>
-          <h3>80%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:80%;"></div>
-          </div>
+    <div class="col l3 m6 s6">
+      <div class="skill-box">
+        <h2>jQuery</h2>
+        <h3>80%</h3>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width:80%;"></div>
         </div>
       </div>
-
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>jQuery</h2>
-          <h3>80%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:80%;"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col l3 m6 s6">
-        <div class="skill-box">
-          <h2>Flutter</h2>
-          <h3>90%</h3>
-          <div class="skill-progress">
-            <div class="skill-fill" style="width:85%;"></div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
   </div>
 
-  <div class="center-align" style="background-color:#F5F5F5;">
-    <div class="section" style="padding-bottom:5em;padding-top:3em;">
+  </div>
+
+  <div class="project-section center-align">
+    <div class="section" style="padding-bottom:5em;">
+
 
       <div class="row">
+        <div class="col l8 push-l2 s12">
+          <div id="id-project" class="row">
+            <h2 class="section-title white-text">PROYEK</h2>
+          </div>
 
-        <div class="col l4 push-l2 s12">
-          <h2 class="section-title">PROJECTS</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>IoT Plant Growth Monitoring (Lynth Garden)</td>
-                <td><a href="#modal1"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>IoT Smart Doorbell</td>
-                <td><a href="#modal12"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>Hunter VPN Application, Provide Free VPN Service</td>
-                <td><a href="#modal7"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>Free Open VPN Account Scraping Application</td>
-                <td><a href="#modal8"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>Mobile Roulette Prize Application (PT.Djarum - Kudus)</td>
-                <td><a href="#modal3"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>System Administrator Jersey Selling and Tracking System (ProjectOne)</td>
-                <td><a href="#modal2"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>Desktop Software Protector From User Duplication (ZXC)</td>
-                <td><a href="#modal5"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>Streamy Video Stream, Streaming Videos on a Local Network</td>
-                <td><a href="#modal6"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>Mobile Expense Report Application (PT. Eka Surya Alam)</td>
-                <td><a href="#modal4"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>IPK Kalkulator App With Koltin</td>
-                <td><a href="#modal11"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>My Notes App With Flutter</td>
-                <td><a href="#modal9"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-              <tr>
-                <td>BMI Calculator App With Flutter</td>
-                <td><a href="#modal10"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="row project">
+
+            <div class="col l4 s12">
+              <a href="#modal1" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/iot2.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">IoT Plant Growth Monitoring (Lynth Garden)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal12" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-12-2.jpeg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">IoT Smart Doorbell (Hardware)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal13" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-13-2.png" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">IoT Smart Doorbell (Software)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal8" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-8-1.png" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">Free Open VPN Account Scraping Application</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal7" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-7-5.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">Hunter VPN Application, Provide Free VPN Service</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal2" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-1-2.png" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">System Administrator Jersey Selling and Tracking System (ProjectOne)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal9" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-9-2.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">My Notes App With Flutter</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal10" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-10-1.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">BMI Calculator App With Flutter</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal3" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-6-1.png" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">Mobile Roulette Prize Application (PT.Djarum - Kudus)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal4" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-3-3.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">Mobile Expense Report Application (PT. Eka Surya Alam)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal5" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-5-1.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">Desktop Software Protector From User Duplication (ZXC)</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal6" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-4-2.png" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">Streamy Video Stream, Streaming Videos on a Local Network</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col l4 s12">
+              <a href="#modal11" class="modal-trigger">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/project-11-2.jpg" alt="project-image">
+                    <div class="card-title-shadow"></div>
+                    <span class="card-title">IPK Kalkulator App With Koltin</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+
         </div>
-
-        <div class="col l4 push-l2 s12">
-          <h2 class="section-title">CERTIFICATES</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>SERTIFIKAT KOMPETENSI</td>
-                <td>
-                  <a href="#modal-cert-1"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>SERTIFIKAT PELATIHAN</td>
-                <td>
-                  <a href="#modal-cert-7"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_pelatihan.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>MEMULAI PEMROGRAMAN DENGAN DART</td>
-                <td>
-                  <a href="#modal-cert-2"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_dart.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>MEMULAI PEMROGRAMAN DENGAN KOTLIN</td>
-                <td>
-                  <a href="#modal-cert-3"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_kotlin.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>BELAJAR PRINSIP PEMROGRAMAN SOLID</td>
-                <td>
-                  <a href="#modal-cert-4"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_solid.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>BELAJAR MEMBUAT APLIKASI ANDROID PEMULA</td>
-                <td>
-                  <a href="#modal-cert-5"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_android_pemula.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>MEMBANGUN GAME 2D & 3D DENGAN UNITY</td>
-                <td>
-                  <a href="#modal-cert-6"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_game.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-              <tr>
-                <td>MENJADI MENTOR FLUTTER DENGAN UDACODING</td>
-                <td>
-                  <a href="#modal-cert-8"
-                    class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">remove_red_eye</i></a>
-                  <a href="pdf/cert_speaker_flutter.pdf"
-                    class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                      class="material-icons">file_download</i></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
       </div>
 
     </div>
@@ -757,8 +919,11 @@
         <div class="col s12" style="margin-bottom:25px;">
           <script src="https://www.w3counter.com/tracker.js?id=132783"></script>
         </div>
+        <div class="col s12" style="margin-bottom: 10px;">
+          <span style="color:rgb(125, 125, 125)">Hosted with ❤️️ by GitHub</span>
+        </div>
         <div class="col s12">
-          <span style="color:rgb(125, 125, 125)"> © 2020 Rizki Adi Saputra</span>
+          <span style="color:rgb(125, 125, 125)"> © 2021 Rizki Adi Saputra</span>
         </div>
       </div>
     </div>
@@ -766,65 +931,165 @@
     <!-- end F O O T E R  -->
 
 
+    <!-- ======= BUTTON CERTIFICATES MODALS ======= -->
+    <div id="modal-cert-button" class="modal modal-fixed-footer">
+      <div class="modal-content" style="background: white;">
+        <h4>Sertifikat</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>SERTIFIKAT KOMPETENSI</td>
+              <td>
+                <a href="#modal-cert-1"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>SERTIFIKAT PELATIHAN</td>
+              <td>
+                <a href="#modal-cert-7"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_pelatihan.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>MEMULAI PEMROGRAMAN DENGAN DART</td>
+              <td>
+                <a href="#modal-cert-2"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_dart.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>MEMULAI PEMROGRAMAN DENGAN KOTLIN</td>
+              <td>
+                <a href="#modal-cert-3"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_kotlin.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>BELAJAR PRINSIP PEMROGRAMAN SOLID</td>
+              <td>
+                <a href="#modal-cert-4"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_solid.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>BELAJAR MEMBUAT APLIKASI ANDROID PEMULA</td>
+              <td>
+                <a href="#modal-cert-5"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_android_pemula.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>MEMBANGUN GAME 2D & 3D DENGAN UNITY</td>
+              <td>
+                <a href="#modal-cert-6"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_game.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>MENJADI MENTOR FLUTTER DENGAN UDACODING</td>
+              <td>
+                <a href="#modal-cert-8"
+                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">remove_red_eye</i></a>
+                <a href="pdf/cert_speaker_flutter.pdf"
+                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                    class="material-icons">file_download</i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-white btn-flat">Close</a>
+      </div>
+    </div>
+
 
     <!-- ======= CERTIFICATES MODALS ======= -->
 
     <div id="modal-cert-1" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert.png"></a>
+        <a href="#"><img src="images/certificates/cert.png"></a>
       </div>
     </div>
     <div id="modal-cert-2" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_dart.png"></a>
+        <a href="#"><img src="images/certificates/cert_dart.png"></a>
       </div>
     </div>
     <div id="modal-cert-3" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_kotlin.png"></a>
+        <a href="#"><img src="images/certificates/cert_kotlin.png"></a>
       </div>
     </div>
     <div id="modal-cert-4" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_solid.png"></a>
+        <a href="#"><img src="images/certificates/cert_solid.png"></a>
       </div>
     </div>
     <div id="modal-cert-5" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_android_pemula.png"></a>
+        <a href="#"><img src="images/certificates/cert_android_pemula.png"></a>
       </div>
     </div>
     <div id="modal-cert-6" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_game.png"></a>
+        <a href="#"><img src="images/certificates/cert_game.png"></a>
       </div>
     </div>
     <div id="modal-cert-7" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_pelatihan_1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_pelatihan_2.png"></a>
+        <a href="#"><img src="images/certificates/cert_pelatihan_1.png"></a>
+        <a href="#"><img src="images/certificates/cert_pelatihan_2.png"></a>
       </div>
     </div>
     <div id="modal-cert-8" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/certificates/cert_speaker_flutter.png"></a>
+        <a href="#"><img src="images/certificates/cert_speaker_flutter.png"></a>
       </div>
     </div>
 
@@ -835,159 +1100,127 @@
     <div id="modal1" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot2.jpg"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot.jpg"></a>
-        <a href="#"><img src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/iot3.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-2.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-3.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-4.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-5.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-2-6.png"></a>
+        <a href="#"><img src="images/iot2.jpg"></a>
+        <a href="#"><img src="images/iot.jpg"></a>
+        <a href="#"><img src="images/iot3.jpg"></a>
+        <a href="#"><img src="images/project-2-1.png"></a>
+        <a href="#"><img src="images/project-2-2.png"></a>
+        <a href="#"><img src="images/project-2-3.png"></a>
+        <a href="#"><img src="images/project-2-4.png"></a>
+        <a href="#"><img src="images/project-2-5.png"></a>
+        <a href="#"><img src="images/project-2-6.png"></a>
       </div>
     </div>
 
     <div id="modal2" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-2.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-1-3.png"></a>
+        <a href="#"><img src="images/project-1-1.png"></a>
+        <a href="#"><img src="images/project-1-2.png"></a>
+        <a href="#"><img src="images/project-1-3.png"></a>
       </div>
     </div>
 
     <div id="modal3" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-2.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-3.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-4.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-6-5.png"></a>
+        <a href="#"><img src="images/project-6-1.png"></a>
+        <a href="#"><img src="images/project-6-2.png"></a>
+        <a href="#"><img src="images/project-6-3.png"></a>
+        <a href="#"><img src="images/project-6-4.png"></a>
+        <a href="#"><img src="images/project-6-5.png"></a>
       </div>
     </div>
 
     <div id="modal4" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-1.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-2.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-3.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-3-4.jpg"></a>
+        <a href="#"><img src="images/project-3-1.jpg"></a>
+        <a href="#"><img src="images/project-3-2.jpg"></a>
+        <a href="#"><img src="images/project-3-3.jpg"></a>
+        <a href="#"><img src="images/project-3-4.jpg"></a>
       </div>
     </div>
 
     <div id="modal5" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-5-1.jpg"></a>
+        <a href="#"><img src="images/project-5-1.jpg"></a>
       </div>
     </div>
 
     <div id="modal6" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-2.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-4-3.png"></a>
+        <a href="#"><img src="images/project-4-1.png"></a>
+        <a href="#"><img src="images/project-4-2.png"></a>
+        <a href="#"><img src="images/project-4-3.png"></a>
       </div>
     </div>
 
     <div id="modal7" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-5.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-2.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-3.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-7-4.png"></a>
+        <a href="#"><img src="images/project-7-5.jpg"></a>
+        <a href="#"><img src="images/project-7-1.png"></a>
+        <a href="#"><img src="images/project-7-2.png"></a>
+        <a href="#"><img src="images/project-7-3.png"></a>
+        <a href="#"><img src="images/project-7-4.png"></a>
       </div>
     </div>
 
     <div id="modal8" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-8-1.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-8-2.png"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-8-3.png"></a>
+        <a href="#"><img src="images/project-8-1.png"></a>
+        <a href="#"><img src="images/project-8-2.png"></a>
+        <a href="#"><img src="images/project-8-3.png"></a>
       </div>
     </div>
 
     <div id="modal9" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-9-1.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-9-2.jpg"></a>
+        <a href="#"><img src="images/project-9-1.jpg"></a>
+        <a href="#"><img src="images/project-9-2.jpg"></a>
       </div>
     </div>
 
     <div id="modal10" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-10-1.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-10-2.jpg"></a>
+        <a href="#"><img src="images/project-10-1.jpg"></a>
+        <a href="#"><img src="images/project-10-2.jpg"></a>
       </div>
     </div>
 
     <div id="modal11" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-11-1.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-11-2.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-11-3.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-11-4.jpg"></a>
+        <a href="#"><img src="images/project-11-1.jpg"></a>
+        <a href="#"><img src="images/project-11-2.jpg"></a>
+        <a href="#"><img src="images/project-11-3.jpg"></a>
+        <a href="#"><img src="images/project-11-4.jpg"></a>
       </div>
     </div>
 
     <div id="modal12" class="modal">
       <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
         data-height="90%">
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-12-1.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-12-2.jpeg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-12-3.jpg"></a>
-        <a href="#"><img
-            src="https://raw.githubusercontent.com/riskiadi/riskiadi.github.io/master/images/project-12-4.jpg"></a>
+        <a href="#"><img src="images/project-12-1.jpg"></a>
+        <a href="#"><img src="images/project-12-2.jpeg"></a>
+        <a href="#"><img src="images/project-12-3.jpg"></a>
+        <a href="#"><img src="images/project-12-4.jpg"></a>
+      </div>
+    </div>
+
+    <div id="modal13" class="modal">
+      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+        data-height="90%">
+        <a href="#"><img src="images/project-13-1.png"></a>
+        <a href="#"><img src="images/project-13-2.png"></a>
+        <a href="#"><img src="images/project-13-3.png"></a>
+        <a href="#"><img src="images/project-13-4.jpg"></a>
       </div>
     </div>
 
@@ -1004,7 +1237,21 @@
         $('.materialboxed').materialbox();
         $('.modal').modal();
       });
+
+      $('#nav-button-skill').click(function () {
+        $('html, body').animate({
+          scrollTop: $('#id-skill').offset().top
+        }, 900);
+      });
+
+      $('#nav-button-project').click(function () {
+        $('html, body').animate({
+          scrollTop: $('#id-project').offset().top
+        }, 900);
+      });
+
     </script>
+
 
 </body>
 
