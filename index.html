@@ -77,7 +77,7 @@
     }
 
     .parallax-container {
-      height: 800px;
+      height: 100vh;
     }
 
     .profile-photo {
@@ -100,6 +100,7 @@
     .title-subheader {
       margin-top: 25px;
       margin-bottom: 34px;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     }
 
     .title-subheader h2 {
@@ -219,10 +220,28 @@
     }
 
     .section-title {
+      letter-spacing: 9px;
+      margin: 0px;
       font-size: 28px !important;
       position: relative;
       display: inline-block;
       color: #282828;
+    }
+
+    .section-title::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      left: 0;
+      bottom: -15px;
+    }
+
+    .section-title.black-section::before {
+      border-bottom: 3px solid #282828;
+    }
+
+    .section-title.white-section::before {
+      border-bottom: 3px solid white;
     }
 
     .h-divider {
@@ -255,6 +274,11 @@
 
     .about-section {
       margin-top: 30px;
+    }
+
+    .skill-section {
+      padding-top: 70px;
+      padding-bottom: 70px;
     }
 
     .skill-box {
@@ -318,6 +342,9 @@
     }
 
     .project-section {
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 70px;
       background-image: linear-gradient(to bottom, rgba(0, 99, 198, 1), rgba(0, 89, 178, 1), rgba(0, 79, 158, 1), rgba(0, 69, 138, 1), rgba(0, 35, 69, 1));
     }
 
@@ -337,7 +364,23 @@
 
       .section-title {
         display: block;
-        font-size: 20px !important;
+        font-size: 24px !important;
+      }
+
+      .section-title::before {
+        position: absolute;
+        content: '';
+        width: 70%;
+        left: 15%;
+        bottom: -15px;
+      }
+
+      .section-title.black-section::before {
+        border-bottom: 2px solid #282828;
+      }
+
+      .section-title.white-section::before {
+        border-bottom: 2px solid white;
       }
 
       .parallax-container .parallax .responsive-img {
@@ -575,688 +618,700 @@
 
   </div>
 
-  <div style="padding-bottom:15px;position:relative;">
+  <div class="skill-section">
 
     <div class="row container center-align">
       <div id="id-skill" class="col s12">
-        <h2 class="section-title">KEAHLIAN UMUM</h2>
+        <h2 class="section-title black-section">KEAHLIAN UMUM</h2>
       </div>
     </div>
 
-    <div class="row container"">
+    <div class="row container" style="margin-bottom: 0;margin-top: 50px;">
 
       <div class=" col l3 m6 s6 center-align">
-      <div class="skill-box">
-        <h2>Dart</h2>
-        <h3>85%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:80%;"></div>
+        <div class="skill-box">
+          <h2>Dart</h2>
+          <h3>85%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:80%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>Flutter</h2>
-        <h3>90%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:85%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>Flutter</h2>
+          <h3>90%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:85%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6 center-align">
-      <div class="skill-box">
-        <h2>Kotlin</h2>
-        <h3>90%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:90%;"></div>
+      <div class="col l3 m6 s6 center-align">
+        <div class="skill-box">
+          <h2>Kotlin</h2>
+          <h3>90%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:90%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class=" col l3 m6 s6 center-align">
-      <div class="skill-box">
-        <h2>Java</h2>
-        <h3>85%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:80%;"></div>
+      <div class=" col l3 m6 s6 center-align">
+        <div class="skill-box">
+          <h2>Java</h2>
+          <h3>85%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:80%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6 center-align">
-      <div class="skill-box">
-        <h2>IoT</h2>
-        <h3>75%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:75%;"></div>
+      <div class="col l3 m6 s6 center-align">
+        <div class="skill-box">
+          <h2>IoT</h2>
+          <h3>75%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:75%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>PHP</h2>
-        <h3>85%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:85%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>PHP</h2>
+          <h3>85%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:85%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>UI/UX</h2>
-        <h3>80%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:80%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>UI/UX</h2>
+          <h3>80%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:80%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>HTML</h2>
-        <h3>95%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:95%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>HTML</h2>
+          <h3>95%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:95%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>CSS</h2>
-        <h3>90%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:90%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>CSS</h2>
+          <h3>90%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:90%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>JS</h2>
-        <h3>80%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:80%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>JS</h2>
+          <h3>80%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:80%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>C</h2>
-        <h3>75%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:75%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>C</h2>
+          <h3>75%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:75%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col l3 m6 s6">
-      <div class="skill-box">
-        <h2>jQuery</h2>
-        <h3>80%</h3>
-        <div class="skill-progress">
-          <div class="skill-fill" style="width:80%;"></div>
+      <div class="col l3 m6 s6">
+        <div class="skill-box">
+          <h2>jQuery</h2>
+          <h3>80%</h3>
+          <div class="skill-progress">
+            <div class="skill-fill" style="width:80%;"></div>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
+    </div>
 
   </div>
 
   <div class="project-section center-align">
-    <div class="section" style="padding-bottom:5em;">
 
+    <div class="row">
+      <div class="col l8 push-l2 s12">
 
-      <div class="row">
-        <div class="col l8 push-l2 s12">
+        <div id="id-project" class="row">
+          <h2 class="section-title white-section white-text">PROYEK & KREASI</h2>
+        </div>
 
-          <div id="id-project" class="row">
-            <h2 class="section-title white-text">PROYEK</h2>
+        <div class="row project" style="margin-top: 70px;">
+
+          <div class="col l4 m6 s12">
+            <a href="#modal1" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/iot2.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">IoT Plant Growth Monitoring (Lynth Garden)</span>
+                </div>
+              </div>
+            </a>
           </div>
 
-          <div class="row project" style="margin-top: 3em;">
-
-            <div class="col l4 m6 s12">
-              <a href="#modal1" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/iot2.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">IoT Plant Growth Monitoring (Lynth Garden)</span>
-                  </div>
+          <div class="col l4 m6 s12">
+            <a href="#modal12" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-12-2.jpeg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">IoT Smart Doorbell (Hardware)</span>
                 </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal12" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-12-2.jpeg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">IoT Smart Doorbell (Hardware)</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal13" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-13-2.png" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">IoT Smart Doorbell (Software)</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal8" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-8-1.png" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">Free Open VPN Account Scraping Application</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal7" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-7-5.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">Hunter VPN Application, Provide Free VPN Service</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal2" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-1-2.png" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">System Administrator Jersey Selling and Tracking System (ProjectOne)</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal9" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-9-2.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">My Notes App With Flutter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal10" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-10-1.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">BMI Calculator App With Flutter</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal3" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-6-1.png" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">Mobile Roulette Prize Application (PT.Djarum - Kudus)</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal4" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-3-3.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">Mobile Expense Report Application (PT. Eka Surya Alam)</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal5" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-5-1.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">Desktop Software Protector From User Duplication (ZXC)</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal6" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-4-2.png" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">Streamy Video Stream, Streaming Videos on a Local Network</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col l4 m6 s12">
-              <a href="#modal11" class="modal-trigger">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/project-11-2.jpg" alt="project-image">
-                    <div class="card-title-shadow"></div>
-                    <span class="card-title">IPK Kalkulator App With Koltin</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
+              </div>
+            </a>
           </div>
 
-        </div>
-      </div>
-
-    </div>
-
-    <!-- start F O O T E R  -->
-    <div class="section" style="background:#222222;">
-      <div class="row center-align container contact-wrapper">
-        <div class="col m2 push-m1 s2">
-          <div class="contact">
-            <a href="https://www.instagram.com/rizkiadisp/"><img src="images/icon/instagram.svg" /></a>
+          <div class="col l4 m6 s12">
+            <a href="#modal13" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-13-2.png" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">IoT Smart Doorbell (Software)</span>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
 
-        <div class="col m2 push-m1 s2">
-          <div class="contact">
-            <a href="https://www.facebook.com/rizkiadisaputra77"><img src="images/icon/facebook.svg" /></a>
+          <div class="col l4 m6 s12">
+            <a href="#modal8" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-8-1.png" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">Free Open VPN Account Scraping Application</span>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
 
-        <div class="col m2 push-m1 s2">
-          <div class="contact">
-            <a href="https://play.google.com/store/apps/developer?id=Alkalynx"><img
-                src="images/icon/playstore.svg" /></a>
+          <div class="col l4 m6 s12">
+            <a href="#modal7" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-7-5.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">Hunter VPN Application, Provide Free VPN Service</span>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
 
-        <div class="col m2 push-m1 s2">
-          <div class="contact">
-            <a href="https://github.com/riskiadi"><img src="images/icon/github.svg" /></a>
+          <div class="col l4 m6 s12">
+            <a href="#modal2" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-1-2.png" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">System Administrator Jersey Selling and Tracking System (ProjectOne)</span>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
 
-        <div class="col m2 push-m1 s2">
-          <div class="contact">
-            <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/"><img src="images/icon/linkedin.svg" /></a>
+          <div class="col l4 m6 s12">
+            <a href="#modal9" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-9-2.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">My Notes App With Flutter</span>
+                </div>
+              </div>
+            </a>
           </div>
+
+          <div class="col l4 m6 s12">
+            <a href="#modal10" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-10-1.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">BMI Calculator App With Flutter</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col l4 m6 s12">
+            <a href="#modal3" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-6-1.png" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">Mobile Roulette Prize Application (PT.Djarum - Kudus)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col l4 m6 s12">
+            <a href="#modal4" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-3-3.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">Mobile Expense Report Application (PT. Eka Surya Alam)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col l4 m6 s12">
+            <a href="#modal5" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-5-1.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">Desktop Software Protector From User Duplication (ZXC)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col l4 m6 s12">
+            <a href="#modal6" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-4-2.png" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">Streamy Video Stream, Streaming Videos on a Local Network</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col l4 m6 s12">
+            <a href="#modal11" class="modal-trigger">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/project-11-2.jpg" alt="project-image">
+                  <div class="card-title-shadow"></div>
+                  <span class="card-title">IPK Kalkulator App With Koltin</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
         </div>
 
       </div>
-      <div class="row center-align" style="margin-top:30px;margin-bottom:30px;">
-        <div class="col s12" style="margin-bottom:25px;">
-          <script src="https://www.w3counter.com/tracker.js?id=132783"></script>
+    </div>
+  </div>
+
+
+  <!-- start F O O T E R  -->
+  <div class="section" style="background:#222222;">
+    <div class="row center-align container contact-wrapper">
+      <div class="col m2 push-m1 s2">
+        <div class="contact">
+          <a href="https://www.instagram.com/rizkiadisp/"><img src="images/icon/instagram.svg" /></a>
         </div>
-        <div class="col s12" style="margin-bottom: 10px;">
-          <span style="color:rgb(125, 125, 125)">Hosted with ❤️️ by GitHub</span>
+      </div>
+
+      <div class="col m2 push-m1 s2">
+        <div class="contact">
+          <a href="https://www.facebook.com/rizkiadisaputra77"><img src="images/icon/facebook.svg" /></a>
         </div>
-        <div class="col s12">
-          <span style="color:rgb(125, 125, 125)"> © 2021 Rizki Adi Saputra</span>
+      </div>
+
+      <div class="col m2 push-m1 s2">
+        <div class="contact">
+          <a href="https://play.google.com/store/apps/developer?id=Alkalynx"><img src="images/icon/playstore.svg" /></a>
         </div>
       </div>
-    </div>
 
-    <!-- end F O O T E R  -->
-
-
-    <!-- ======= BUTTON CERTIFICATES MODALS ======= -->
-    <div id="modal-cert-button" class="modal modal-fixed-footer">
-      <div class="modal-content" style="background: white;">
-        <h4>Sertifikat</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>SERTIFIKAT KOMPETENSI</td>
-              <td>
-                <a href="#modal-cert-1"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>SERTIFIKAT PELATIHAN</td>
-              <td>
-                <a href="#modal-cert-7"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_pelatihan.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>MEMULAI PEMROGRAMAN DENGAN DART</td>
-              <td>
-                <a href="#modal-cert-2"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_dart.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>MEMULAI PEMROGRAMAN DENGAN KOTLIN</td>
-              <td>
-                <a href="#modal-cert-3"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_kotlin.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>BELAJAR PRINSIP PEMROGRAMAN SOLID</td>
-              <td>
-                <a href="#modal-cert-4"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_solid.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>BELAJAR MEMBUAT APLIKASI ANDROID PEMULA</td>
-              <td>
-                <a href="#modal-cert-5"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_android_pemula.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>MEMBANGUN GAME 2D & 3D DENGAN UNITY</td>
-              <td>
-                <a href="#modal-cert-6"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_game.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>MENJADI MENTOR FLUTTER DENGAN UDACODING</td>
-              <td>
-                <a href="#modal-cert-8"
-                  class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">remove_red_eye</i></a>
-                <a href="pdf/cert_speaker_flutter.pdf"
-                  class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
-                    class="material-icons">file_download</i></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col m2 push-m1 s2">
+        <div class="contact">
+          <a href="https://github.com/riskiadi"><img src="images/icon/github.svg" /></a>
+        </div>
       </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-white btn-flat">Close</a>
+
+      <div class="col m2 push-m1 s2">
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/rizki-adi-saputra-2939a4b4/"><img src="images/icon/linkedin.svg" /></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="row center-align" style="margin-top:30px;margin-bottom:30px;">
+      <div class="col s12" style="margin-bottom:25px;">
+        <script src="https://www.w3counter.com/tracker.js?id=132783"></script>
+      </div>
+      <div class="col s12" style="margin-bottom: 10px;">
+        <span style="color:rgb(125, 125, 125)">Hosted with ❤️️ by GitHub</span>
+      </div>
+      <div class="col s12">
+        <span style="color:rgb(125, 125, 125)"> © 2021 Rizki Adi Saputra</span>
       </div>
     </div>
+  </div>
+
+  <!-- end F O O T E R  -->
 
 
-    <!-- ======= CERTIFICATES MODALS ======= -->
+  <!-- ======= BUTTON CERTIFICATES MODALS ======= -->
+  <div id="modal-cert-button" class="modal modal-fixed-footer">
+    <div class="modal-content" style="background: white;">
+      <h4>Sertifikat</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
 
-    <div id="modal-cert-1" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert.png"></a>
-      </div>
+        <tbody>
+          <tr>
+            <td>SERTIFIKAT KOMPETENSI</td>
+            <td>
+              <a href="#modal-cert-1"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert.pdf" class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>SERTIFIKAT PELATIHAN</td>
+            <td>
+              <a href="#modal-cert-7"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_pelatihan.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>MEMULAI PEMROGRAMAN DENGAN DART</td>
+            <td>
+              <a href="#modal-cert-2"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_dart.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>MEMULAI PEMROGRAMAN DENGAN KOTLIN</td>
+            <td>
+              <a href="#modal-cert-3"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_kotlin.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>BELAJAR PRINSIP PEMROGRAMAN SOLID</td>
+            <td>
+              <a href="#modal-cert-4"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_solid.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>BELAJAR MEMBUAT APLIKASI ANDROID PEMULA</td>
+            <td>
+              <a href="#modal-cert-5"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_android_pemula.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>BELAJAR FUNDAMENTAL APLIKASI ANDROID</td>
+            <td>
+              <a href="#modal-cert-9"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_android_fundamental.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>MEMBANGUN GAME 2D & 3D DENGAN UNITY</td>
+            <td>
+              <a href="#modal-cert-6"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_game.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>MENJADI MENTOR FLUTTER DENGAN UDACODING</td>
+            <td>
+              <a href="#modal-cert-8"
+                class="modal-trigger btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">remove_red_eye</i></a>
+              <a href="pdf/cert_speaker_flutter.pdf"
+                class="btn-floating btn-small waves-effect waves-light action-button z-depth-0"><i
+                  class="material-icons">file_download</i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="modal-cert-2" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_dart.png"></a>
-      </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-white btn-flat">Close</a>
     </div>
-    <div id="modal-cert-3" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_kotlin.png"></a>
-      </div>
+  </div>
+
+
+  <!-- ======= CERTIFICATES MODALS ======= -->
+
+  <div id="modal-cert-1" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert.png"></a>
     </div>
-    <div id="modal-cert-4" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_solid.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-2" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_dart.png"></a>
     </div>
-    <div id="modal-cert-5" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_android_pemula.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-3" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_kotlin.png"></a>
     </div>
-    <div id="modal-cert-6" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_game.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-4" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_solid.png"></a>
     </div>
-    <div id="modal-cert-7" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_pelatihan_1.png"></a>
-        <a href="#"><img src="images/certificates/cert_pelatihan_2.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-5" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_android_pemula.png"></a>
     </div>
-    <div id="modal-cert-8" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/certificates/cert_speaker_flutter.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-6" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_game.png"></a>
     </div>
-
-
-
-    <!-- ======= PROJECTS MODALS ======= -->
-
-    <div id="modal1" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/iot2.jpg"></a>
-        <a href="#"><img src="images/iot.jpg"></a>
-        <a href="#"><img src="images/iot3.jpg"></a>
-        <a href="#"><img src="images/project-2-1.png"></a>
-        <a href="#"><img src="images/project-2-2.png"></a>
-        <a href="#"><img src="images/project-2-3.png"></a>
-        <a href="#"><img src="images/project-2-4.png"></a>
-        <a href="#"><img src="images/project-2-5.png"></a>
-        <a href="#"><img src="images/project-2-6.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-7" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_pelatihan_1.png"></a>
+      <a href="#"><img src="images/certificates/cert_pelatihan_2.png"></a>
     </div>
-
-    <div id="modal2" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-1-1.png"></a>
-        <a href="#"><img src="images/project-1-2.png"></a>
-        <a href="#"><img src="images/project-1-3.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-8" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_speaker_flutter.png"></a>
     </div>
-
-    <div id="modal3" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-6-1.png"></a>
-        <a href="#"><img src="images/project-6-2.png"></a>
-        <a href="#"><img src="images/project-6-3.png"></a>
-        <a href="#"><img src="images/project-6-4.png"></a>
-        <a href="#"><img src="images/project-6-5.png"></a>
-      </div>
+  </div>
+  <div id="modal-cert-9" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/certificates/cert_android_fundamental.png"></a>
     </div>
+  </div>
 
-    <div id="modal4" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-3-1.jpg"></a>
-        <a href="#"><img src="images/project-3-2.jpg"></a>
-        <a href="#"><img src="images/project-3-3.jpg"></a>
-        <a href="#"><img src="images/project-3-4.jpg"></a>
-      </div>
+
+  <!-- ======= PROJECTS MODALS ======= -->
+
+  <div id="modal1" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/iot2.jpg"></a>
+      <a href="#"><img src="images/iot.jpg"></a>
+      <a href="#"><img src="images/iot3.jpg"></a>
+      <a href="#"><img src="images/project-2-1.png"></a>
+      <a href="#"><img src="images/project-2-2.png"></a>
+      <a href="#"><img src="images/project-2-3.png"></a>
+      <a href="#"><img src="images/project-2-4.png"></a>
+      <a href="#"><img src="images/project-2-5.png"></a>
+      <a href="#"><img src="images/project-2-6.png"></a>
     </div>
+  </div>
 
-    <div id="modal5" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-5-1.jpg"></a>
-      </div>
+  <div id="modal2" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-1-1.png"></a>
+      <a href="#"><img src="images/project-1-2.png"></a>
+      <a href="#"><img src="images/project-1-3.png"></a>
     </div>
+  </div>
 
-    <div id="modal6" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-4-1.png"></a>
-        <a href="#"><img src="images/project-4-2.png"></a>
-        <a href="#"><img src="images/project-4-3.png"></a>
-      </div>
+  <div id="modal3" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-6-1.png"></a>
+      <a href="#"><img src="images/project-6-2.png"></a>
+      <a href="#"><img src="images/project-6-3.png"></a>
+      <a href="#"><img src="images/project-6-4.png"></a>
+      <a href="#"><img src="images/project-6-5.png"></a>
     </div>
+  </div>
 
-    <div id="modal7" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-7-5.jpg"></a>
-        <a href="#"><img src="images/project-7-1.png"></a>
-        <a href="#"><img src="images/project-7-2.png"></a>
-        <a href="#"><img src="images/project-7-3.png"></a>
-        <a href="#"><img src="images/project-7-4.png"></a>
-      </div>
+  <div id="modal4" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-3-1.jpg"></a>
+      <a href="#"><img src="images/project-3-2.jpg"></a>
+      <a href="#"><img src="images/project-3-3.jpg"></a>
+      <a href="#"><img src="images/project-3-4.jpg"></a>
     </div>
+  </div>
 
-    <div id="modal8" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-8-1.png"></a>
-        <a href="#"><img src="images/project-8-2.png"></a>
-        <a href="#"><img src="images/project-8-3.png"></a>
-      </div>
+  <div id="modal5" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-5-1.jpg"></a>
     </div>
+  </div>
 
-    <div id="modal9" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-9-1.jpg"></a>
-        <a href="#"><img src="images/project-9-2.jpg"></a>
-      </div>
+  <div id="modal6" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-4-1.png"></a>
+      <a href="#"><img src="images/project-4-2.png"></a>
+      <a href="#"><img src="images/project-4-3.png"></a>
     </div>
+  </div>
 
-    <div id="modal10" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-10-1.jpg"></a>
-        <a href="#"><img src="images/project-10-2.jpg"></a>
-      </div>
+  <div id="modal7" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-7-5.jpg"></a>
+      <a href="#"><img src="images/project-7-1.png"></a>
+      <a href="#"><img src="images/project-7-2.png"></a>
+      <a href="#"><img src="images/project-7-3.png"></a>
+      <a href="#"><img src="images/project-7-4.png"></a>
     </div>
+  </div>
 
-    <div id="modal11" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-11-1.jpg"></a>
-        <a href="#"><img src="images/project-11-2.jpg"></a>
-        <a href="#"><img src="images/project-11-3.jpg"></a>
-        <a href="#"><img src="images/project-11-4.jpg"></a>
-      </div>
+  <div id="modal8" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-8-1.png"></a>
+      <a href="#"><img src="images/project-8-2.png"></a>
+      <a href="#"><img src="images/project-8-3.png"></a>
     </div>
+  </div>
 
-    <div id="modal12" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-12-1.jpg"></a>
-        <a href="#"><img src="images/project-12-2.jpeg"></a>
-        <a href="#"><img src="images/project-12-3.jpg"></a>
-        <a href="#"><img src="images/project-12-4.jpg"></a>
-      </div>
+  <div id="modal9" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-9-1.jpg"></a>
+      <a href="#"><img src="images/project-9-2.jpg"></a>
     </div>
+  </div>
 
-    <div id="modal13" class="modal">
-      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
-        data-height="90%">
-        <a href="#"><img src="images/project-13-1.png"></a>
-        <a href="#"><img src="images/project-13-2.png"></a>
-        <a href="#"><img src="images/project-13-3.png"></a>
-        <a href="#"><img src="images/project-13-4.png"></a>
-      </div>
+  <div id="modal10" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-10-1.jpg"></a>
+      <a href="#"><img src="images/project-10-2.jpg"></a>
     </div>
+  </div>
+
+  <div id="modal11" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-11-1.jpg"></a>
+      <a href="#"><img src="images/project-11-2.jpg"></a>
+      <a href="#"><img src="images/project-11-3.jpg"></a>
+      <a href="#"><img src="images/project-11-4.jpg"></a>
+    </div>
+  </div>
+
+  <div id="modal12" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-12-1.jpg"></a>
+      <a href="#"><img src="images/project-12-2.jpeg"></a>
+      <a href="#"><img src="images/project-12-3.jpg"></a>
+      <a href="#"><img src="images/project-12-4.jpg"></a>
+    </div>
+  </div>
+
+  <div id="modal13" class="modal">
+    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-ratio="700/467" data-width="100%"
+      data-height="90%">
+      <a href="#"><img src="images/project-13-1.png"></a>
+      <a href="#"><img src="images/project-13-2.png"></a>
+      <a href="#"><img src="images/project-13-3.png"></a>
+      <a href="#"><img src="images/project-13-4.png"></a>
+    </div>
+  </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Fotorama from CDNJS, 19 KB -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('.parallax').parallax();
-        $('.materialboxed').materialbox();
-        $('.modal').modal();
-      });
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.modal').modal();
+    });
 
-      $('#nav-button-skill').click(function () {
-        $('html, body').animate({
-          scrollTop: $('#id-skill').offset().top
-        }, 900);
-      });
+    $('#nav-button-skill').click(function () {
+      $('html, body').animate({
+        scrollTop: $('#id-skill').offset().top
+      }, 900);
+    });
 
-      $('#nav-button-project').click(function () {
-        $('html, body').animate({
-          scrollTop: $('#id-project').offset().top
-        }, 900);
-      });
+    $('#nav-button-project').click(function () {
+      $('html, body').animate({
+        scrollTop: $('#id-project').offset().top
+      }, 900);
+    });
 
-    </script>
+  </script>
 
 
 </body>
