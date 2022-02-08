@@ -4,7 +4,7 @@
 		"email": "rizkiadisaputra77@gmail.com",
 		"tempat_tinggal": "Semarang",
 		"tanggal_lahir": "24/07/1997",
-		"pengalaman": "4",
+		"pengalaman": "5",
 		"link_cv": "https://www.google.com",
 		"perkenalan": "saya adalah seorang pengembang Android, dengan cara native maupun menggunakan framework Flutter. Selain menjadi pengembang saya juga merupakan publisher aplikasi pada layanan Google Playstore, dan saya juga melakukan beberapa penelitian mengenai IoT."
 	},
@@ -16,10 +16,9 @@
 		"github": "https://github.com/riskiadi"
 	},
 	"profesi": [
-		"MsOffice",
+		"Android",
 		"UI/UX",
-		"PHP",
-		"SEO"
+		"Flutter"
 	],
 	"skills": {
 		"primary": [{
@@ -30,15 +29,16 @@
 				"nama_skill": "Kotlin",
 				"persen": "89"
 			},
+		 	{
+				"nama_skill": "UI/UX",
+				"persen": "94"
+			},
 			{
 				"nama_skill": "IoT",
-				"persen": "94"
+				"persen": "93"
 			}
 		],
-		"secondary": [{
-				"nama_skill": "UI/UX",
-				"persen": "93"
-			},
+		"secondary": [
 			{
 				"nama_skill": "PHP",
 				"persen": "87"
@@ -50,6 +50,21 @@
 			{
 				"nama_skill": "CSS",
 				"persen": "90"
+			},
+			{
+				"nama_skill": "JS",
+				"persen": "80"
+			},			{
+				"nama_skill": "JAVA",
+				"persen": "85"
+			},
+			{
+				"nama_skill": "C++",
+				"persen": "83"
+			},
+			{
+				"nama_skill": "jQuery",
+				"persen": "81"
 			}
 		]
 	}
