@@ -1,58 +1,56 @@
 {
-    "personal": {
-        "nama": "Rizki Adi Saputra",
-        "email": "rizkiadisaputra77@gmail.com",
-        "tempat_tinggal": "Semarang",
-        "tanggal_lahir": "24/07/1997",
-        "pengalaman": "4",
-        "link_cv": "https://www.google.com",
-        "perkenalan": "Test saya adalah pengembang android dan IoT."
-    },
-    "sosial_media": {
-        "facebook": "https://www.facebook.com",
-        "linkedin": "https://www.linkedin.com/",
-        "google_playstore": "https://play.google.com/store",
-        "instagram": "https://www.instagram.com/rizkiadisp",
-        "github": "https://github.com/riskiadi"
-    },
-    "profesi": [
-        "MsOffice",
-        "UI/UX",
-        "PHP",
-        "SEO"
-    ],
-    "skills": {
-        "primary": [
-            {
-                "nama_skill": "Flutter",
-                "persen": "91"
-            },
-            {
-                "nama_skill": "Kotlin",
-                "persen": "89"
-            },
-            {
-                "nama_skill": "IoT",
-                "persen": "94"
-            },
-        ],
-        "secondary": [
-            {
-                "nama_skill": "UI/UX",
-                "persen": "93"
-            },
-            {
-                "nama_skill": "PHP",
-                "persen": "87"
-            },
-            {
-                "nama_skill": "HTML",
-                "persen": "95"
-            },
-            {
-                "nama_skill": "CSS",
-                "persen": "90"
-            },
-        ],
-    },
+	"personal": {
+		"nama": "Rizki Adi Saputra",
+		"email": "rizkiadisaputra77@gmail.com",
+		"tempat_tinggal": "Semarang",
+		"tanggal_lahir": "24/07/1997",
+		"pengalaman": "4",
+		"link_cv": "https://www.google.com",
+		"perkenalan": "Test saya adalah pengembang android dan IoT."
+	},
+	"sosial_media": {
+		"facebook": "https://www.facebook.com",
+		"linkedin": "https://www.linkedin.com/",
+		"google_playstore": "https://play.google.com/store",
+		"instagram": "https://www.instagram.com/rizkiadisp",
+		"github": "https://github.com/riskiadi"
+	},
+	"profesi": [
+		"MsOffice",
+		"UI/UX",
+		"PHP",
+		"SEO"
+	],
+	"skills": {
+		"primary": [{
+				"nama_skill": "Flutter",
+				"persen": "91"
+			},
+			{
+				"nama_skill": "Kotlin",
+				"persen": "89"
+			},
+			{
+				"nama_skill": "IoT",
+				"persen": "94"
+			}
+		],
+		"secondary": [{
+				"nama_skill": "UI/UX",
+				"persen": "93"
+			},
+			{
+				"nama_skill": "PHP",
+				"persen": "87"
+			},
+			{
+				"nama_skill": "HTML",
+				"persen": "95"
+			},
+			{
+				"nama_skill": "CSS",
+				"persen": "90"
+			}
+		]
+	}
 }
