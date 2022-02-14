@@ -67983,7 +67983,7 @@ m=A.a(m.a,e).b
 k=n.f
 r=A.cu(g,A.cE(A.d(k==null?g:k[h.d].b),g,g,g,A.bl(B.j,18*$.a1.H().gbG(),g,g,g,g),g,g),g,g,g,g,g,new A.b0(10*(o/p),15*(l/m),10*(q/r),0),g)
 q=$.a1.H()
-q=A.c8(g,15*(A.a(q.f,d)/A.a(q.a,e).b),g)
+q=A.c8(g,35*(A.a(q.f,d)/A.a(q.a,e).b),g)
 p=$.a1.H()
 o=A.a(p.e,f)
 p=A.a(p.a,e).a
@@ -68237,7 +68237,7 @@ r=A.a(r.a,i).a
 q=$.a1.H()
 p=A.a(q.e,j)
 q=A.a(q.a,i).a
-r=A.cu(k,k,A.aK(B.d.aN(127.5),0,0,0),k,k,180*(p/q),k,k,180*(d/r))
+r=A.cu(k,k,A.aK(B.d.aN(76.5),0,0,0),k,k,180*(p/q),k,k,180*(d/r))
 d=$.a1.H()
 q=A.a(d.e,j)
 d=A.a(d.a,i).a
