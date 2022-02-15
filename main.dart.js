@@ -68154,7 +68154,7 @@ god(){return"\\"}}
 A.a3i.prototype={}
 A.TO.prototype={
 a73(){var s="_screenWidth"
-if(A.a($.n.q().e,s)<=500)return B.Al
+if(A.a($.n.q().e,s)<=560)return B.Al
 else if(A.a($.n.q().e,s)<1024)return B.Am
 else if(A.a($.n.q().e,s)>=1024)return B.j_
 else return B.j_}}
